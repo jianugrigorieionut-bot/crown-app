@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Crown Analytics</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Crown">
+<meta name="theme-color" content="#07111f">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+
+<style>
+:root{--bg:#07111f;--s1:#0d1b30;--s2:#12243d;--ln:#1e3557;--em:#19d38a;--bl:#4da3ff;--tx:#e8f0fa;--mu:#8aa0ba;--am:#f5b84b;--rd:#ef5b6b}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+.app{max-width:560px;margin:0 auto;min-height:100dvh;padding-bottom:104px;background:radial-gradient(circle at 85% -5%,rgba(25,211,138,.16),transparent 45%),radial-gradient(circle at 0 20%,rgba(77,163,255,.10),transparent 40%),var(--bg)}
+header{display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) 18px 10px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800}.logo span{font-weight:400;color:var(--mu)}
+.mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#19d38a,#0f7f6b);font-size:20px}
+.mbtn{width:42px;height:42px;border-radius:12px;background:var(--s1);border:1px solid var(--ln);font-size:18px}
+main{padding:6px 18px}
+h1{font-size:26px;margin:8px 0 4px}h2{font-size:15px;margin:22px 0 10px;color:var(--mu);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.sub{color:var(--mu);font-size:14px}
+.hero{border-radius:24px;padding:20px;background:linear-gradient(135deg,#0f4a52 0%,#0d2a47 60%,#0d1b30 100%);border:1px solid var(--ln);position:relative;overflow:hidden}
+.hero::after{content:"👑";position:absolute;right:-6px;top:-10px;font-size:110px;opacity:.08}
+.hero .big{font-size:46px;font-weight:800;line-height:1}.hero .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;background:rgba(255,255,255,.08)}
+.tag.g{background:rgba(25,211,138,.18);color:var(--em)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:var(--s1);border:1px solid var(--ln);border-radius:20px;padding:16px;text-align:left}
+.tile.w{grid-column:1/3;background:linear-gradient(135deg,#0e5a4a,#0d2f4a);border-color:#1b6b5b;display:flex;align-items:center;gap:14px}
+.tile .ic{width:44px;height:44px;border-radius:14px;background:rgba(25,211,138,.15);display:grid;place-items:center;font-size:22px;margin-bottom:10px}.tile.w .ic{margin:0;background:rgba(255,255,255,.12)}
+.tile b{display:block;font-size:16px}.tile small{color:var(--mu);font-size:12.5px;line-height:1.3;display:block;margin-top:2px}
+nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:560px;display:grid;grid-template-columns:repeat(5,1fr);background:rgba(7,17,31,.96);border-top:1px solid var(--ln);padding:8px 4px calc(8px + env(safe-area-inset-bottom,0px));z-index:20}
+nav button{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--mu);font-size:11.5px;font-weight:700}
+nav .ni{width:50px;height:30px;border-radius:15px;display:grid;place-items:center;font-size:18px;filter:grayscale(1) opacity(.7)}
+nav .on{color:var(--em)}nav .on .ni{background:rgba(25,211,138,.16);filter:none}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin:10px 0}
+.days button{flex:1;min-width:62px;padding:8px 4px;border-radius:14px;background:var(--s1);border:1px solid var(--ln);color:var(--mu);font-size:12px;font-weight:700;text-transform:capitalize}
+.days b{display:block;font-size:17px;color:var(--tx)}.days .on{background:var(--em);border-color:var(--em);color:#04281c}.days .on b{color:#04281c}
+.row2{display:grid;grid-template-columns:1.3fr 1fr;gap:8px}
+.in,.sel{width:100%;background:var(--s1);border:1px solid var(--ln);border-radius:14px;padding:12px 14px;font-size:15px;outline:0}.in:focus{border-color:var(--em)}
+.sel{appearance:none;-webkit-appearance:none;font-weight:600}
+.scr{display:flex;gap:8px;overflow-x:auto;margin:10px 0;padding-bottom:2px}.scr button{white-space:nowrap;padding:9px 14px;border-radius:999px;background:var(--s1);border:1px solid var(--ln);color:var(--mu);font-weight:700;font-size:13.5px}.scr .on{background:rgba(25,211,138,.16);border-color:var(--em);color:var(--em)}
+.seg{display:grid;grid-template-columns:repeat(5,1fr);background:var(--s1);border:1px solid var(--ln);border-radius:14px;padding:4px;margin-bottom:10px}.seg button{padding:9px 0;border-radius:10px;color:var(--mu);font-weight:700;font-size:13.5px}.seg .on{background:var(--s2);color:var(--tx);box-shadow:inset 0 0 0 1px var(--em)}
+.st{color:var(--mu);font-size:12.5px;margin:4px 2px 12px}.st button{color:var(--em);font-weight:700;margin-left:8px}
+.cd{display:grid;grid-template-columns:58px 1fr 68px;gap:12px;align-items:center;background:var(--s1);border:1px solid var(--ln);border-radius:20px;padding:14px;margin-bottom:10px}
+.cd .tm{text-align:center;font-weight:800;font-size:16px}.cd .tm small{display:block;font-size:11px;margin-top:4px;color:var(--mu);font-weight:700}
+.cd .tm .lv{color:var(--rd)}.cd .lg{grid-column:1/4;font-size:12px;color:var(--mu);margin:-4px 0 -2px}
+.tr{display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:15px;padding:2px 0}.tr em{font-style:normal;color:var(--em);font-weight:800}
+.dts{display:flex;gap:4px;margin-top:6px;align-items:center}.dts span{width:7px}
+.dt{display:inline-block;width:9px;height:9px;border-radius:50%}.dt.w{background:var(--em)}.dt.d{background:var(--am)}.dt.l{background:var(--rd)}
+.rg{width:var(--s,64px);height:var(--s,64px);border-radius:50%;background:conic-gradient(var(--c,var(--em)) calc(var(--v)*1%),#1b3150 0);display:grid;place-items:center;position:relative;flex:none}
+.rg::before{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--s1)}.rg span{position:relative;font-weight:800;font-size:15px}.rg small{font-size:10px;font-weight:700}
+.bk{color:var(--em);font-weight:700;font-size:15px;padding:6px 0 10px}
+.mh{background:linear-gradient(135deg,#0f4a52,#0d2a47 70%);border:1px solid var(--ln);border-radius:24px;padding:18px;text-align:center}
+.mh .lg{font-size:12.5px;color:#b8cde4;margin-bottom:12px}
+.tt{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center}.tt .n{font-weight:800;font-size:14px;margin-top:8px}
+.cr{width:56px;height:56px;margin:0 auto;border-radius:18px;overflow:visible;background:var(--s1);border:1px solid var(--ln);display:grid;place-items:center;font-size:22px;font-weight:800;color:var(--em);position:relative}
+.cr i{position:absolute;top:-8px;right:-10px;font-style:normal;font-size:10px;background:var(--em);color:#04281c;border-radius:999px;padding:1px 6px;font-weight:800}
+.tt .sc{font-size:30px;font-weight:800}.tt .sc small{display:block;font-size:12px;color:#b8cde4;font-weight:700}
+.cp{background:var(--s1);border:1px solid var(--ln);border-radius:20px;padding:14px 16px}
+.cmp{margin:10px 0}.cmp .lb{text-align:center;font-size:12.5px;color:var(--mu);font-weight:700;margin-bottom:5px}
+.bw{display:grid;grid-template-columns:44px 1fr 1fr 44px;gap:6px;align-items:center;font-weight:800;font-size:13px}.bw b:last-child{text-align:right}
+.tl,.tr2{height:10px;background:#0a1626;border-radius:5px;display:flex;overflow:hidden}.tl{justify-content:flex-end}.tl i{background:var(--em)}.tr2 i{background:var(--bl)}
+.gr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gr>div{background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px 6px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--mu)}
+.fm{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-size:13.5px;font-weight:700}.fm .dts{margin:0}
+details.ac{background:var(--s1);border:1px solid var(--ln);border-radius:16px;padding:14px 16px;margin-top:10px}details.ac summary{font-weight:700;list-style:none;cursor:pointer}details.ac p{margin:10px 0 0;color:var(--mu);font-size:13.5px}
+pre{white-space:pre-wrap;word-break:break-word;font-size:11px;background:#050d19;border-radius:12px;padding:10px;max-height:300px;overflow:auto;color:#b8cde4}
+.btn{background:var(--em);color:#04281c;font-weight:800;border-radius:12px;padding:12px 16px}
+.ov{position:fixed;inset:0;background:rgba(2,8,16,.7);z-index:40;display:none;justify-content:flex-end}.ov.o{display:flex}
+.dr{width:86%;max-width:380px;background:var(--bg);border-left:1px solid var(--ln);padding:calc(20px + env(safe-area-inset-top,0px)) 16px 20px;overflow:auto}
+.mi{display:flex;justify-content:space-between;width:100%;text-align:left;background:var(--s1);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin-bottom:8px;font-weight:700}
+.box{background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:16px;margin-bottom:12px;color:var(--mu);line-height:1.5}
+#tt{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--em);color:#04281c;padding:8px 16px;border-radius:999px;font-weight:800;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}#tt.on{opacity:1}
+.ctr{text-align:center;color:var(--mu);padding:50px 10px}
+.nm{display:flex;align-items:center;gap:8px;min-width:0}
+.cs{width:26px;height:26px;border-radius:8px;background:var(--s2);display:grid;place-items:center;font-size:12px;color:var(--em);position:relative;overflow:hidden;flex:none;font-weight:800}
+.cs img,.cr img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:3px;background:var(--s1);border-radius:inherit}
+.xb{display:flex;height:34px;border-radius:12px;overflow:hidden;font-weight:800;font-size:13px}.xb i{font-style:normal;display:grid;place-items:center;min-width:34px}
+.xb .a{background:var(--em);color:#04281c}.xb .b{background:#2a4468}.xb .c{background:var(--bl);color:#04281c}
+.xl{display:flex;justify-content:space-between;color:var(--mu);font-size:12px;margin-top:6px}
+.st button.p{background:rgba(25,211,138,.16);border-radius:999px;padding:5px 12px}
+.pk{display:flex;gap:6px}.pk button{width:42px;height:40px;border-radius:12px;background:var(--s2);border:1px solid var(--ln);font-weight:800}.pk .on{background:var(--em);color:#04281c;border-color:var(--em)}
+.rrow{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px 14px;margin-bottom:8px}.rrow small{display:block;color:var(--mu);font-size:12px;margin-top:2px}
+.fi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.fi .in{padding:11px 12px}
+.bt button{padding:7px 10px;border-radius:10px;font-size:12.5px;font-weight:700;background:var(--s2);border:1px solid var(--ln);margin:6px 6px 0 0}
+.pos{color:var(--em)}.neg{color:var(--rd)}
+.evr{display:grid;grid-template-columns:1fr 54px 1fr;gap:6px;align-items:center;padding:9px 0;border-bottom:1px solid var(--ln);font-size:14px}.evr:last-child{border:0}
+.evr .l{text-align:right}.evr .mn{text-align:center;color:var(--mu);font-weight:800}.evr small{display:block;color:var(--mu);font-size:11.5px;font-weight:500}
+.pr{display:grid;grid-template-columns:30px 1fr auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--ln);font-size:14px}.pr b{color:var(--em);text-align:center}.pr small{color:var(--mu)}
+.hkg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.hk{background:var(--s2);border-radius:14px;padding:10px 6px;text-align:center}.hk b{font-size:20px}.hk small{display:block;color:var(--mu);font-size:11px;margin-top:2px}
+.hhc{background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px 14px;margin-bottom:10px}
+.hht{font-size:12px;color:var(--mu);font-weight:700}.hhm{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:10px 0}
+.hhm .t{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;min-width:0}.hhm .t.r{justify-content:flex-end;text-align:right}
+.sc2{font-size:22px;font-weight:800}.hhb{display:flex;justify-content:space-between;font-size:12px;color:var(--mu)}.hhb b{color:var(--em)}
+#sp{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:radial-gradient(circle at 80% 0,rgba(25,211,138,.22),transparent 50%),var(--bg);transition:opacity .45s}
+#sp.h{opacity:0;pointer-events:none}
+#sp .mk{width:96px;height:96px;border-radius:28px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,#19d38a,#0f7f6b);box-shadow:0 12px 40px rgba(25,211,138,.35);animation:spp 1.6s ease-in-out infinite}
+#sp b{font-size:26px}#sp b span{font-weight:400;color:var(--mu)}
+#sp small{color:var(--mu);font-size:13px}
+#sp i{width:26px;height:26px;border-radius:50%;border:3px solid var(--ln);border-top-color:var(--em);animation:sps .9s linear infinite}
+@keyframes sps{to{transform:rotate(360deg)}}@keyframes spp{50%{transform:scale(1.06)}}
+@media(prefers-reduced-motion:reduce){#sp .mk,#sp i{animation:none}}
+.lg2{margin-top:14px;font-size:12.5px;color:var(--mu);display:flex;gap:14px;flex-wrap:wrap}.lg2 button{color:var(--em);font-weight:700;font-size:12.5px;padding:0}
+.legal h3{font-size:15px;margin:16px 0 4px;color:var(--tx)}.legal p,.legal li{font-size:13.5px;line-height:1.5;color:#c3d2e4;margin:4px 0}.legal ul{padding-left:18px;margin:4px 0}
+</style>
+</head>
+<body>
+<div id="sp"><div class="mk">👑</div><b>Crown <span>Analytics</span></b><i></i><small>Se pornește…</small></div>
+<div class="app">
+<header><div class="logo"><div class="mark">👑</div>Crown <span>Analytics</span></div><button class="mbtn" data-act="menu" aria-label="Meniu">☰</button></header>
+<main id="v"></main>
+<nav id="nv"></nav>
+</div>
+<div class="ov" id="ov"><div class="dr" id="dr"></div></div>
+<div id="tt" role="status"></div>
+<script>
+let SERVER=location.hostname.endsWith("onrender.com")?location.origin:"https://crown-analytics-server.onrender.com";
+try{SERVER=localStorage.getItem("crown_server")||SERVER}catch(e){}
+const $=s=>document.querySelector(s),V=$("#v");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const p2=n=>String(n).padStart(2,"0");
+const ldate=d=>d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate());
+const ymd=o=>ldate(new Date(Date.now()+o*864e5));
+const wait=ms=>new Promise(z=>setTimeout(z,ms));
+let tab="home",inD=false,curId=null,mode="demo",msg="Mod demo",M=[],hist={},seen=new Set(),cache={},fdName={},formDone={},noTF=false,busy=false;
+const S={day:0,q:"",lg:"all",mk:"gg",chip:"all"};
+const LMKX={h1:"Gol în repriza 1",h2:"Gol în repriza 2",co:"Peste 8.5 cornere",yc:"Peste 3.5 cartonașe"};
+const MKS={gg:"Ambele marchează",o15:"Peste 1.5 goluri",o25:"Peste 2.5 goluri",o35:"Peste 3.5 goluri",x12:"1 sau 2 câștigă",x1:"1X (gazdele nu pierd)",x2:"X2 (oaspeții nu pierd)"};
+function toast(t){const e=$("#tt");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1800)}
+
+/* ---------- demo ---------- */
+const F=s=>s.split(",").map(x=>{const[a,b]=x.split("-").map(Number);return{gf:a,ga:b,t:0,h:a+b>1?1:0,s:a+b>0?1:0}});
+function demo(){const now=Date.now();hist={};
+ const D=[["Nordia","Valmar","Liga Demo","Polonia",150,"2-1,1-1,3-1,1-2,2-2,0-1,1-1","1-1,2-1,1-0,2-2,1-3,0-0,2-1"],
+ ["Rivera","Castell","Divizia Demo","Olanda",210,"2-1,1-2,2-2,0-1,1-1,3-1,1-2","3-1,2-2,1-1,4-2,2-1,1-2,2-2"],
+ ["Delta FC","Ardeal United","Cupa Demo","România",-55,"1-0,0-0,2-1,1-1,3-0,0-1,1-0","0-1,1-1,0-0,2-0,1-2,0-0,1-1"],
+ ["Costa Real","Sierra CF","Primera Demo","Spania",1500,"2-2,1-0,3-1,2-1,0-2,1-1,2-0","1-2,2-2,0-1,1-1,2-3,1-0,0-2"]];
+ M=D.map((d,i)=>{hist[d[0].toLowerCase()]=F(d[5]);hist[d[1].toLowerCase()]=F(d[6]);const lv=d[4]<0,t=new Date(now+d[4]*6e4);
+  return{id:"d"+i,demo:1,ids:[],league:{name:d[2],country:d[3]},teams:{home:{name:d[0]},away:{name:d[1]}},goals:{home:lv?1:null,away:lv?0:null},_t:t,_tk:true,_live:lv,_done:false,_st:lv?"live":"scheduled",min:lv?55:0,per:"",_d:ldate(t)}})}
+
+/* ---------- citire date OpenFoot ---------- */
+const CC={usa:"SUA",eng:"Anglia",de:"Germania",es:"Spania",it:"Italia",fr:"Franța",ro:"România",nl:"Olanda",pt:"Portugalia",tr:"Turcia",be:"Belgia",br:"Brazilia",ar:"Argentina",mx:"Mexic",pl:"Polonia",se:"Suedia",no:"Norvegia",dk:"Danemarca",gr:"Grecia",at:"Austria",ch:"Elveția",sco:"Scoția",jp:"Japonia",cz:"Cehia",hu:"Ungaria",rs:"Serbia",bg:"Bulgaria",hr:"Croația",fi:"Finlanda",ie:"Irlanda",wal:"Țara Galilor",ua:"Ucraina",ru:"Rusia",cn:"China",kr:"Coreea de Sud",au:"Australia",ca:"Canada",cl:"Chile",co:"Columbia",uy:"Uruguay",mt:"Malta",cy:"Cipru"};
+function pl(id){const w=String(id||"").replace(/^comp_/,"").split("_");let c="";if(w.length>1&&w[w.length-1].length<=3)c=w.pop();
+ const name=w.join(" ").split(/[\s-]+/).map(x=>x.length<=3?x.toUpperCase():x[0].toUpperCase()+x.slice(1)).join(" ");return{name:name||"Football",country:CC[c]||c.toUpperCase()}}
+const toArr=j=>Array.isArray(j)?j:[j&&j.data&&j.data.matches,j&&j.data,j&&j.matches,j&&j.results,j&&j.response].find(Array.isArray)||[];
+const nn=x=>x!==null&&x!==undefined&&x!==""&&Number.isFinite(+x)?+x:null;
+function norm(f){if(!f||f.id==null||!f.homeTeam||!f.awayTeam)return null;
+ const t=f.kickoffAt?new Date(f.kickoffAt):null,okT=t&&!isNaN(t),st=f.status||"unknown",sc=f.score||{};
+ return{id:f.id,ids:[f.homeTeam.id,f.awayTeam.id],league:pl(f.competitionId),teams:{home:{name:f.homeTeam.name,logo:f.homeTeam.logoUrl},away:{name:f.awayTeam.name,logo:f.awayTeam.logoUrl}},
+  goals:{home:nn(sc.home),away:nn(sc.away)},_t:okT?t:null,_tk:okT&&f.kickoffTimeKnown!==false,_live:st=="live",_done:st=="finished",_st:st,min:nn(f.minute)||0,per:f.period||"",_d:okT?ldate(t):"",_raw:f}}
+function addHist(list){list.forEach(m=>{if(!m._done||m.goals.home==null||m.goals.away==null)return;const k=m.id;if(seen.has(k))return;seen.add(k);
+ const a=m.goals.home,b=m.goals.away,t=m._t?+m._t:0;
+ const p=(n,gf,ga)=>{const key=n.toLowerCase();if(fdName[key])return;(hist[key]=hist[key]||[]).push({gf,ga,t,h:null,s:null})};
+ p(m.teams.home.name,a,b);p(m.teams.away.name,b,a)})}
+
+/* ---------- statistici ---------- */
+const pc=(a,n)=>n?Math.round(a/n*10000)/100:null;
+const last7=n=>(hist[n.toLowerCase()]||[]).slice().sort((x,y)=>x.t-y.t).slice(-7);
+function TS(name){const f=last7(name),n=f.length;if(n<3)return null;
+ const p=fn=>pc(f.filter(fn).length,n),hk=f.filter(x=>x.h!=null),sk=f.filter(x=>x.s!=null);
+ const g=f.reduce((s,x)=>s+x.gf,0),c=f.reduce((s,x)=>s+x.ga,0),w=f.filter(x=>x.gf>x.ga).length,d=f.filter(x=>x.gf==x.ga).length;
+ return{n,g,c,ag:g/n,ac:c/n,w,d,l:n-w-d,gg:p(x=>x.gf&&x.ga),o15:p(x=>x.gf+x.ga>1),o25:p(x=>x.gf+x.ga>2),o35:p(x=>x.gf+x.ga>3),u25:p(x=>x.gf+x.ga<3),
+  ht:hk.length>=3?pc(hk.filter(x=>x.h).length,hk.length):null,st:sk.length>=3?pc(sk.filter(x=>x.s).length,sk.length):null,x12:pc(n-d,n)}}
+let fdOff=false;const fdS={};const fdv=n=>{const v=fdS[n.toLowerCase()];return v&&!v.na?v:null};
+const fdAvg=(m,k)=>{const a=fdv(m.teams.home.name),b=fdv(m.teams.away.name);return a&&b?Math.round((a[k]+b[k])/2*10)/10:null};
+const avg2=(a,b,k)=>a&&b&&a[k]!=null&&b[k]!=null?Math.round((a[k]+b[k])/2*10)/10:null;
+const DCP={x1:72,x2:55};
+function dc(m,k){const a=TS(m.teams.home.name),b=TS(m.teams.away.name);if(!a||!b)return null;
+ const H=(a.w/a.n+b.l/b.n)/2,D=(a.d/a.n+b.d/b.n)/2,A=(a.l/a.n+b.w/b.n)/2,v=(k=="x1"?H+D:D+A)*100,n=Math.min(a.n,b.n);
+ return Math.round((v*n+DCP[k]*5)/(n+5)*10)/10}
+const mv=(m,k)=>k=="x1"||k=="x2"?dc(m,k):avg2(TS(m.teams.home.name),TS(m.teams.away.name),k);
+const hhmm=m=>m._t&&m._tk?m._t.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):"--:--";
+const rc=v=>v>=70?"var(--em)":v>=50?"var(--bl)":"var(--am)";
+const ring=(v,sz)=>`<div class="rg" style="--v:${v==null?0:v};--c:${v==null?"#1b3150":rc(v)};--s:${sz||64}px"><span>${v==null?"—":Math.round(v)+"<small>%</small>"}</span></div>`;
+const dotsH=n=>last7(n).map(x=>`<i class="dt ${x.gf>x.ga?"w":x.gf==x.ga?"d":"l"}"></i>`).join("");
+const dotsS=s=>[...String(s||"")].map(c=>`<i class="dt ${c=="W"?"w":c=="D"?"d":"l"}"></i>`).join("");
+const crest=(t,rk)=>`<div class="cr">${esc((t.name||"?")[0])}${t.logo?`<img src="${esc(t.logo)}" alt="" loading="lazy" onerror="this.remove()">`:""}${rk!=null?`<i>#${rk}</i>`:""}</div>`;
+const cs=t=>`<span class="cs">${esc((t.name||"?")[0])}${t.logo?`<img src="${esc(t.logo)}" alt="" loading="lazy" onerror="this.remove()">`:""}</span>`;
+const state=m=>m._live?`<small class="lv">● ${m.per=="HT"?"HT":"LIVE"+(m.min?" "+m.min+"'":"")}</small>`:m._done?`<small>FT</small>`:m._st=="postponed"?`<small>Amânat</small>`:m._st=="cancelled"?`<small>Anulat</small>`:`<small>NS</small>`;
+
+/* ---------- navigare ---------- */
+const NAV=[["home","🏠","Acasă"],["stats","⚽","Meciuri"],["royal","🏆","Royal"],["treasury","💰","Treasury"],["contact","☎️","Contact"]];
+function nav(){$("#nv").innerHTML=NAV.map(n=>`<button data-act="tab" data-v="${n[0]}" class="${tab==n[0]?"on":""}"><span class="ni">${n[1]}</span>${n[2]}</button>`).join("")}
+function go(t){tab=t;inD=false;nav();window.scrollTo(0,0);
+ if(t=="home")home();else if(t=="stats")stats();else if(t=="royal")royal();else if(t=="treasury")treasury();else if(t=="gen")gen();else{const n=NAV.find(x=>x[0]==t);V.innerHTML=`<div class="ctr"><div style="font-size:60px">${n[1]}</div><h1>${n[2]}</h1>În curând.</div>`}}
+const TILES=[["📊","Statistici avansate","Filtrează meciurile după probabilități.","stats"],["🏆","Royal League","Fă pronosticuri, strânge puncte, urcă în rang.","royal"],["🎟️","Generator bilete","Bilet automat din cele mai probabile pronosticuri.","gen"],["💬","Chat live","Discuții în timp real.",""],["📜","Crown Council","Selecția echipei Crown, meci cu meci.",""],["💰","Treasury","Jurnalul tău de mize, profit și ROI.","treasury"]];
+function home(){const t0=ymd(0),today=M.filter(m=>m._d==t0),live=M.filter(m=>m._live).length;
+ let best=null;today.forEach(m=>{const v=mv(m,"gg");if(v!=null&&(!best||v>best.v))best={m,v}});
+ V.innerHTML=`<div class="hero"><div class="sub" style="color:#b8cde4">Meciuri azi</div><div class="big">${today.length}</div>
+ <div class="row"><span class="tag ${mode=="live"?"g":""}">● ${mode=="live"?"Date reale":"Mod demo"}</span><span class="tag">⚡ ${live} live</span>${best?`<span class="tag g">★ ${esc(best.m.teams.home.name)} – ${esc(best.m.teams.away.name)} · ${best.v}%</span>`:""}</div></div>
+ <h2>Secțiuni</h2><div class="tiles">`+TILES.map((t,i)=>`<button class="tile ${i==0?"w":""}" data-act="tile" data-v="${i}"><div class="ic">${t[0]}</div><div><b>${t[1]}</b><small>${t[2]}</small></div></button>`).join("")+`</div><div class="lg2"><button data-act="mgo" data-v="terms">Termeni</button><button data-act="mgo" data-v="privacy">Confidențialitate</button><button data-act="mgo" data-v="resp">Joc responsabil 18+</button></div>`}
+
+
+
+/* ---------- API-Football: reprize, cornere, cartonașe ---------- */
+const AFS={};let afOff=false,afErr="";
+const natLg=m=>/world|europe|international|nations|friendl|qualif|euro\b|cup/i.test((m.league.name||"")+" "+(m.league.country||""))&&!/club|cup of|fa cup|league cup|copa|taça|coupe/i.test(m.league.name||"");
+const afQ=[];let afRun=false;
+function afEnq(fn,prio){return new Promise((res,rej)=>{const t={fn,res,rej};prio?afQ.unshift(t):afQ.push(t);if(!afRun)afLoop()})}
+async function afLoop(){afRun=true;while(afQ.length){const t=afQ.shift();try{t.res(await t.fn())}catch(e){t.rej(e)}await wait(450)}afRun=false}
+const RLX=/too many|rate limit|requests per/i;
+async function afTeam(n,ws,nat,prio){const k=n.toLowerCase();const ok=v=>v===undefined?false:(!ws||v===null||v.s);if(ok(AFS[k]))return AFS[k];if(afOff)return null;if(ws&&AFS[k]===undefined)await afTeam(n,false,nat,prio);if(ok(AFS[k]))return AFS[k];
+ const c=LS.get("af_"+k,null);if(c&&Date.now()-c.t<12*36e5&&ok(c.v)){AFS[k]=c.v;if(c.v&&c.v.g&&last7(n).length<3){hist[k]=c.v.g;fdName[k]=1}return c.v}
+ try{const sq=n.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Za-z0-9 ]+/g," ").replace(/\s+/g," ").trim();if(sq.length<3){AFS[k]=null;return null}const pth="/af-team?name="+encodeURIComponent(sq)+"&stats="+(ws?1:0)+"&nat="+(nat?1:0);const j=await afEnq(async()=>{for(let i=0;i<3;i++){try{return await sf(pth,90000)}catch(e){if(RLX.test(e.message)&&i<2){await wait(20000);continue}throw e}}},prio);let v=null;
+  if(j.found){const L=j.matches||[],w=L.filter(x=>x.ht&&x.ht.home!=null&&x.ht.away!=null&&x.ft&&x.ft.home!=null&&x.ft.away!=null);
+   v={s:!!ws,n:w.length,h1:w.map(x=>x.ht.home+x.ht.away>0?1:0),h2:w.map(x=>(x.ft.home+x.ft.away)-(x.ht.home+x.ht.away)>0?1:0),co:L.map(x=>x.corners).filter(x=>x!=null),yc:L.map(x=>x.yellow).filter(x=>x!=null),g:L.filter(x=>x.ft&&x.ft.home!=null&&x.ft.away!=null).map(x=>{const hm=x.home!==false,gf=hm?x.ft.home:x.ft.away,ga=hm?x.ft.away:x.ft.home,hk=x.ht&&x.ht.home!=null&&x.ht.away!=null;return{gf,ga,t:+new Date(x.date)||0,h:hk?(x.ht.home+x.ht.away>0?1:0):null,s:hk?((x.ft.home+x.ft.away)-(x.ht.home+x.ht.away)>0?1:0):null}})}}
+  if(v&&v.g&&last7(n).length<3){hist[k]=v.g;fdName[k]=1}
+  AFS[k]=v;afErr="";if(!ws||v===null||v.co.length||v.yc.length)LS.set("af_"+k,{t:Date.now(),v});return v}
+ catch(e){afErr=e.message;if(!RLX.test(e.message)&&/key|plan|token|subscription|access|route|not found/i.test(e.message))afOff=true;return null}}
+const AFP={h1:72,h2:82,co:62,yc:55};
+function afP(m,k){const a=AFS[m.teams.home.name.toLowerCase()],b=AFS[m.teams.away.name.toLowerCase()];if(!a||!b)return null;
+ const sh=(v,n)=>(v*n+AFP[k]*5)/(n+5);
+ if(k=="h1"||k=="h2"){if(a.n<3||b.n<3)return null;const p=t=>sh(t[k].reduce((x,y)=>x+y,0)/t[k].length*100,t[k].length);return Math.round((p(a)+p(b))/2*10)/10}
+ const A=a[k],B=b[k],th=k=="co"?8.5:3.5;if(A.length<3||B.length<3)return null;let c=0;A.forEach(x=>B.forEach(y=>{if(x+y>th)c++}));
+ return Math.round(sh(c/(A.length*B.length)*100,Math.min(A.length,B.length))*10)/10}
+const avgA=a=>a&&a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
+function afBox(m,k,label,ic,th){const a=AFS[m.teams.home.name.toLowerCase()],b=AFS[m.teams.away.name.toLowerCase()],h=m.teams.home.name,w=m.teams.away.name;
+ const ld=m.afl;if(!a&&!b)return`<details class="ac"><summary>${ic} ${label} — ${ld?"indisponibil":"se încarcă…"}</summary><p>${ld?(afErr?"API-Football: "+esc(afErr):"Echipele nu au fost găsite în API-Football."):"Se încarcă datele…"}</p></details>`;
+ const x=a&&a[k]&&a[k].length>=3?avgA(a[k]):null,y=b&&b[k]&&b[k].length>=3?avgA(b[k]):null,p=afP(m,k);
+ if(x==null||y==null)return`<details class="ac"><summary>${ic} ${label} — date insuficiente</summary><p>Sunt necesare cel puțin 3 meciuri recente cu statistici pentru ambele echipe. La ligile mici, API-Football nu are mereu cornere/cartonașe.</p></details>`;
+ return`<details class="ac" open><summary>${ic} ${label}<small>~${(x+y).toFixed(1)} / meci</small></summary><p>${esc(h)}: ${x.toFixed(1)} în medie (${a[k].length} meciuri)<br>${esc(w)}: ${y.toFixed(1)} în medie (${b[k].length} meciuri)<br><b>Peste ${th}: ${p!=null?Math.round(p)+"%":"—"}</b> <small>(estimare din ultimele meciuri, trasă spre medie)</small></p></details>`}
+const AFK=["h1","h2","co","yc"];
+const GM={...MKS,...LMKX},lv=(m,k)=>AFK.includes(k)?afP(m,k):mv(m,k);
+const needF=m=>AFK.includes(S.mk)?(AFS[m.teams.home.name.toLowerCase()]===undefined||AFS[m.teams.away.name.toLowerCase()]===undefined):(!TS(m.teams.home.name)||!TS(m.teams.away.name));
+
+/* ---------- generator de bilete ---------- */
+
+const G={top:false,days:[0],mks:["gg","o15","o25","x12"],n:3,t:null,txt:""};
+async function genLoad(){if(mode!="live")return;afErr="";
+ if(true){const need=G.mks.some(k=>AFK.includes(k)),needS=G.mks.some(k=>k=="co"||k=="yc"),ms=M.filter(m=>!m._done&&!m._live&&!m.demo&&G.days.some(d=>m._d==ymd(d))&&(!G.top||isTop(m))).sort((a,b)=>(tier(b)-tier(a))||((+a._t||9e15)-(+b._t||9e15))),natM={};ms.forEach(m=>{natM[m.teams.home.name.toLowerCase()]=natM[m.teams.away.name.toLowerCase()]=natLg(m)});
+  const names=(k,f)=>[...new Set(ms.slice(0,k).flatMap(m=>[m.teams.home.name,m.teams.away.name]))].filter(f);
+  const run=async(list,ws,lbl)=>{const tot=list.length;if(!tot)return;G.busy=1;let done=0;const w=async()=>{while(list.length&&!afOff){const n=list.shift();await afTeam(n,ws,natM[n.toLowerCase()]);done++;const e=$("#gp");if(e)e.textContent=lbl+" "+done+"/"+tot}};await Promise.all([w(),w()])};
+  if(need)await run(names(70,n=>AFS[n.toLowerCase()]===undefined),false,"Încarc istoricul echipelor…");
+  else await run(names(40,n=>AFS[n.toLowerCase()]===undefined&&!TS(n)),false,"Încarc istoricul echipelor…");
+  if(needS)await run(names(24,n=>{const a=AFS[n.toLowerCase()];return a&&!a.s}),true,"Încarc cornere/cartonașe…");
+  G.busy=0}
+ if(noTF)return;
+ const q=M.filter(m=>!m._done&&!m._live&&!m.demo&&m.ids&&m.ids[0]&&G.days.some(d=>m._d==ymd(d))&&(!G.top||isTop(m))&&(!TS(m.teams.home.name)||!TS(m.teams.away.name))).sort((a,b)=>(isTop(b)-isTop(a))||((+a._t||9e15)-(+b._t||9e15))).slice(0,30),tot=q.length;if(!tot)return;
+ G.busy=1;let done=0;const w=async()=>{while(q.length){const m=q.shift();try{await loadForm(m)}catch(e){if(noRoute(e))q.length=0}done++;G.prog=done+"/"+tot;if(tab=="gen"){const e=$("#gp");if(e)e.textContent="Calculez statisticile echipelor… "+G.prog}}};
+ const e=$("#gp");if(e)e.textContent="Calculez statisticile echipelor… 0/"+tot;
+ await Promise.all([w(),w(),w()]);G.busy=0}
+const PRI={gg:50,o15:75,o25:52,o35:30,x12:75};
+function gv(m,k){if(AFK.includes(k))return afP(m,k);if(k=="x1"||k=="x2")return dc(m,k);const a=TS(m.teams.home.name),b=TS(m.teams.away.name);if(!a||!b||a[k]==null||b[k]==null)return null;
+ const sh=t=>(t[k]*t.n+PRI[k]*5)/(t.n+5);return Math.round((sh(a)+sh(b))/2*10)/10}
+function genBuild(){const ok=M.filter(m=>!m._done&&!m._live&&m._st!="postponed"&&m._st!="cancelled"&&G.days.some(d=>m._d==ymd(d))&&(!G.top||isTop(m)));
+ const cand=[],mset=new Set();ok.forEach(m=>{let any=false;G.mks.forEach(k=>{const v=gv(m,k);if(v!=null&&v>=50){cand.push({m,k,v});any=true}});if(any)mset.add(m.id)});
+ const pick=[],used={},seen=new Set();
+ while(pick.length<G.n){const c=cand.filter(x=>!seen.has(x.m.id));if(!c.length)break;const w=c.map(x=>Math.pow(x.v/100,4)*Math.pow(.35,used[x.k]||0)*[.5,.5,1.6,6][tier(x.m)]),sum=w.reduce((a,b)=>a+b,0);let r=Math.random()*sum,i=0;while(i<w.length-1&&(r-=w[i])>0)i++;const x=c[i];pick.push(x);seen.add(x.m.id);used[x.k]=(used[x.k]||0)+1}
+ const pool={length:mset.size};
+ pick.sort((a,b)=>(a.m._t||0)-(b.m._t||0));
+ const pr=pick.reduce((p,x)=>p*x.v/100,1)*100;const cov=ok.filter(m=>G.mks.some(k=>gv(m,k)!=null)).length;G.t={pick,pr,avail:pool.length,total:ok.length,cov};
+ G.txt="Crown Analytics · bilet ("+pick.length+")\n"+pick.map(x=>hhmm(x.m)+" "+x.m.teams.home.name+" – "+x.m.teams.away.name+" → "+GM[x.k]+" ("+x.v+"%)").join("\n")+"\nȘanse combinate (model): "+pr.toFixed(1)+"%"}
+function gen(){const dn=d=>["Azi","Mâine","Poimâine"][d];
+ const t=G.t;
+ V.innerHTML=`<h1>Generator bilete</h1><div class="sub">Alege zilele și numărul de meciuri. Biletul se face din cele mai probabile pronosticuri din modelul Crown.</div>
+ <h2>Zile</h2><div class="scr">${[0,1,2].map(d=>`<button data-act="gday" data-v="${d}" class="${G.days.includes(d)?"on":""}">${dn(d)}</button>`).join("")}</div>
+ <h2>Piețe incluse</h2><div class="scr">${Object.entries(GM).map(k=>`<button data-act="gmk" data-v="${k[0]}" class="${G.mks.includes(k[0])?"on":""}">${k[1]}</button>`).join("")}</div>
+ <div class="scr" style="margin-top:8px"><button data-act="gtop" class="${G.top?"on":""}">★ Doar ligi principale</button></div>
+ <h2>Număr de meciuri</h2><div class="row2"><input class="in" id="gn" type="number" inputmode="numeric" min="1" max="10" value="${G.n}" aria-label="Număr de meciuri"><button class="btn" data-act="ggo">Generează</button></div>
+ <div class="sub" style="margin-top:8px">Cu cât alegi mai puține meciuri, cu atât șansele combinate cresc.</div>
+ <div class="sub" id="gp" style="margin-top:8px;color:var(--em)"></div>${afErr?`<div class="sub" style="color:var(--am)">API-Football: ${esc(afErr)}</div>`:""}${t?(t.pick.length?`<h2>Biletul tău</h2><div class="cp">${t.pick.map(x=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--ln)"><div><b>${esc(x.m.teams.home.name)} – ${esc(x.m.teams.away.name)}</b><br><small style="color:var(--mu)">${esc(x.m._d)} · ${hhmm(x.m)} · ${GM[x.k]}</small></div><div style="font-weight:800;color:${rc(x.v)}">${x.v}%</div></div>`).join("")}
+  <div style="display:flex;justify-content:space-between;padding-top:12px"><b>Șanse combinate</b><b style="color:${rc(t.pr)}">${t.pr.toFixed(1)}%</b></div></div>
+  <div class="row2" style="margin-top:10px"><button class="btn" data-act="ggo">Alt bilet</button><button class="btn" data-act="gcp" style="background:var(--s1);color:var(--tx);border:1px solid var(--ln)">Copiază</button></div>
+  <div class="sub" style="margin-top:8px">Date suficiente pentru ${t.cov} din ${t.total} meciuri; ${t.avail} trec de 50%.</div><h2>Salvează în Treasury</h2><div class="cp"><div class="sub" style="margin-bottom:8px">Pune cota biletului de la casa ta de pariuri și miza. Biletul apare apoi în Treasury, unde îl marchezi câștigat sau pierdut.</div><div class="fi"><input class="in" id="gq" inputmode="decimal" placeholder="Cotă totală"><input class="in" id="gs" inputmode="decimal" placeholder="Miză (${esc(TR.cur||"RON")})"></div><button class="btn" data-act="gtr" style="width:100%;margin-top:8px">Salvează în Treasury</button></div>
+  ${t.pick.length<G.n?`<div class="sub">Am găsit doar ${t.pick.length} meciuri potrivite (din ${t.total} în zilele alese).</div>`:""}`:`<div class="cp" style="margin-top:12px">Niciun meci potrivit în zilele alese (date suficiente pentru ${t.cov} din ${t.total} meciuri, ${t.avail} peste 50%). Încearcă alte zile sau mai multe piețe.</div>`):""}
+ <div class="sub" style="margin-top:14px">18+ · Doar informativ, nu e sfat financiar și nu încurajăm jocurile de noroc. Procentele sunt ajustate spre media ligii, fiindcă se bazează pe puține meciuri. Șansele combinate presupun meciuri independente și sunt estimări.</div><div class="lg2"><button data-act="mgo" data-v="terms">Termeni</button><button data-act="mgo" data-v="privacy">Confidențialitate</button><button data-act="mgo" data-v="resp">Joc responsabil</button></div>`}
+
+function stats(){const D=[0,1,2].map(d=>{const x=new Date(Date.now()+d*864e5);return[x.toLocaleDateString("ro-RO",{weekday:"short"}).replace(".",""),p2(x.getDate())]});
+ V.innerHTML=`<h1>Meciuri</h1><div class="sub" id="st"></div>
+ <div class="days">${D.map((d,i)=>`<button data-act="day" data-v="${i}" class="${S.day==i?"on":""}">${d[0]}<b>${d[1]}</b></button>`).join("")}<button data-act="day" data-v="3" class="${S.day==3?"on":""}">Toate<b>∞</b></button></div>
+ <div class="row2"><input class="in" id="q" placeholder="🔍 Caută echipe" value="${esc(S.q)}" aria-label="Caută echipe"><select class="sel" id="lg" aria-label="Ligă"></select></div>
+ <div class="scr">${Object.entries(GM).map(k=>`<button data-act="mk" data-v="${k[0]}" class="${S.mk==k[0]?"on":""}">${k[1]}</button>`).join("")}</div>
+ <div class="seg">${[["live","Live"],["3","3h"],["6","6h"],["12","12h"],["all","Toate"]].map(c=>`<button data-act="chip" data-v="${c[0]}" class="${S.chip==c[0]?"on":""}">${c[1]}</button>`).join("")}</div>
+ <div id="ls"></div>`;
+ $("#q").oninput=e=>{S.q=e.target.value;lst()};$("#lg").onchange=e=>{S.lg=e.target.value;lst()};lst()}
+const TOPRX=/premier league|la ?liga|primera divisi|serie a|bundesliga|ligue 1|eredivisie|primeira liga|championship|champions league|europa league|conference league|nations league|world cup|euro|qualif|super lig|süper lig|pro league|superliga|liga 1|scottish premiership|mls|libertadores|sudamericana|brasileir|friendl/i,NOTRX=/women|femin|youth|u ?(17|18|19|20|21|23)\b|reserve|amateur|\bii\b|\bb\b/i;
+const ELX=[["england","^premier league$"],["spain","^(la ?liga|primera divisi.n)$"],["italy","^serie a$"],["germany","^(1\\. )?bundesliga$"],["france","^ligue 1$"],["netherlands","^eredivisie$"],["portugal","^(primeira liga|liga portugal)$"],["belgium","^(jupiler pro league|pro league|first division a)$"],["t[uü]rk","^s[uü]per lig$"],["scotland","^(scottish )?premiership$"],["denmark","^superliga$"],["romania","^(liga (1|i)|superliga)$"],["greece","^super league( 1)?$"],["austria","^bundesliga$"],["switzerland","^super league$"]],
+ELC=/champions league|europa league|conference league|uefa nations league|world cup(?!.*qualif)|euro championship(?!.*qualif)/i,
+T2X=/qualif|nations league|friendl|libertadores|sudamericana|^(mls|major league soccer)$/i,
+T2C=[["england","^(championship|league one|league two)$"],["france","^ligue 2$"],["germany","^2\\. bundesliga$"],["spain","^segunda divisi.n$"],["netherlands","^eerste divisie$"],["portugal","^liga portugal 2$"],["romania","^liga (2|ii)$"],["brazil","^(serie a|brasileir.*)$"],["argentina","^(primera divisi.n|liga profesional.*)$"],["saudi","pro league|professional"],["japan","^j1|j\\. league"],["norway","^eliteserien$"],["sweden","^allsvenskan$"],["poland","^ekstraklasa$"],["belgium","^challenger pro league$"]],
+YTX=/\bU ?(1[5-9]|2[0-3])\b|\bII\b|\bB\b|\bW\b|reserves?|youth|women|\(w\)/i;
+const tier=m=>{const n=(m.league.name||"").toLowerCase(),c=(m.league.country||"").toLowerCase(),a=n+" "+c;if(NOTRX.test(a)||YTX.test((m.teams.home.name||"")+" | "+(m.teams.away.name||"")))return 0;
+ if(ELC.test(n))return 3;for(const[co,rx]of ELX)if(new RegExp(co).test(c)&&new RegExp(rx,"i").test(n))return 3;
+ if(T2X.test(n))return 2;for(const[co,rx]of T2C)if(new RegExp(co).test(c)&&new RegExp(rx,"i").test(n))return 2;return 0};
+const isTop=m=>tier(m)>=2;
+function lst(){const ls=$("#ls");if(!ls||inD||tab!="stats")return;
+ const lgs=[...new Set(M.map(m=>m.league.name))].sort();$("#lg").innerHTML=`<option value="all">🌍 Toate ligile</option><option value="top" ${S.lg=="top"?"selected":""}>★ Ligi principale</option>`+lgs.map(l=>`<option ${S.lg==l?"selected":""}>${esc(l)}</option>`).join("");
+ const ds=S.day==3?null:ymd(S.day),now=Date.now(),q=S.q.trim().toLowerCase(),hrs=+S.chip||0;
+ let L=M.filter(m=>(!ds||m._d==ds)&&(S.lg=="all"||(S.lg=="top"?isTop(m):m.league.name==S.lg))&&(!q||(m.teams.home.name+m.teams.away.name+m.league.name).toLowerCase().includes(q)));
+ if(S.chip=="live")L=L.filter(m=>m._live);else if(hrs)L=L.filter(m=>!m._live&&!m._done&&m._t&&m._t-now>=0&&m._t-now<=hrs*36e5);
+ const tt=m=>m._t?+m._t:9e15;
+ L=L.map(m=>({m,v:lv(m,S.mk)})).sort((a,b)=>(b.v??-1)-(a.v??-1)||(tier(b.m)-tier(a.m))||tt(a.m)-tt(b.m)).slice(0,80);
+ window.__need=mode=="live"&&!noTF?L.slice(0,(S.mk=="co"||S.mk=="yc")?20:60).map(x=>x.m).filter(m=>!tried.has(m.id)&&(m.af||!afOff||(m.ids[0]&&m.ids[1]))&&needF(m)):[];
+ if(window.__need.length&&!busy&&tried.size<200)setTimeout(()=>{if(!busy&&tab=="stats"&&!inD)calcAll()},60);
+ $("#st").innerHTML=esc(msg)+(Q?` · cotă OpenFoot ${Q.used}/${Q.quota}`:"")+(mode=="demo"?`<button data-act="retry">Reîncearcă</button>`:"")+(window.__need.length&&!busy?`<button class="p" data-act="calc">Calculează statistici (${window.__need.length} meciuri)</button>`:"");
+ ls.innerHTML=L.length?L.map(({m,v})=>{const h=m.teams.home,a=m.teams.away,sc=m._live||m._done;
+  return`<div class="cd" data-act="open" data-v="${esc(m.id)}"><div class="lg">${esc(m.league.country)}${m.league.country?" · ":""}${esc(m.league.name)}</div>
+  <div class="tm">${hhmm(m)}${state(m)}</div>
+  <div><div class="tr"><span class="nm">${cs(h)}<span>${esc(h.name)}</span></span>${sc?`<em>${m.goals.home??"-"}</em>`:""}</div><div class="tr"><span class="nm">${cs(a)}<span>${esc(a.name)}</span></span>${sc?`<em>${m.goals.away??"-"}</em>`:""}</div>
+  <div class="dts">${dotsH(h.name)}<span></span>${dotsH(a.name)}</div></div>${ring(v)}</div>`}).join(""):`<div class="ctr">Niciun meci pentru filtrele alese.</div>`}
+
+/* ---------- istoric echipe (rută /team-form pe server) ---------- */
+async function loadForm(m,list){const nt=natLg(m),ws=list?(S.mk=="co"||S.mk=="yc"):inD,hn=m.teams.home.name,an=m.teams.away.name;
+ if(!afOff){await afTeam(hn,ws,nt,!list);await afTeam(an,ws,nt,!list)}
+ if(m.af||!m.ids||!m.ids[0]||(TS(hn)&&TS(an)))return;
+ for(const[id,n]of[[m.ids[0],m.teams.home.name],[m.ids[1],m.teams.away.name]]){if(!id||formDone[id])continue;
+  const ck="tf_"+id,c=LS.get(ck,null);let out=[];
+  if(c&&Date.now()-c.t<12*36e5)out=c.out;
+  else{const j=await sf("/team-form?team="+encodeURIComponent(id));
+   toArr(j).forEach(x=>{const sc=x.score||{};if(x.status!="finished"||sc.home==null||sc.away==null||!x.homeTeam)return;const h=x.homeTeam.id==id;
+    out.push({gf:h?sc.home:sc.away,ga:h?sc.away:sc.home,t:+new Date(x.kickoffAt)||0,h:null,s:null})});
+   if(out.length)LS.set(ck,{t:Date.now(),out})}
+  if(out.length){hist[n.toLowerCase()]=out;fdName[n.toLowerCase()]=1}formDone[id]=1}}
+function noRoute(e){if(/not found|404/i.test(e.message)){noTF=true;toast("Lipsește ruta /team-form pe server");return true}return false}
+const tried=new Set();
+async function calcAll(){if(busy)return;busy=true;const q=(window.__need||[]).slice(),tot=q.length,orig=q.slice();q.forEach(m=>tried.add(m.id));let done=0;
+ const w=async()=>{while(q.length){const m=q.shift();try{await loadForm(m,true)}catch(e){if(noRoute(e))q.length=0}done++;msg=`Calculez statistici… ${done}/${tot}`;paint()}};
+ const all=orig;await Promise.all([w(),w(),w()]);busy=false;msg="Date reale · "+cnt();paint();
+ let retry=0;all.forEach(m=>{if(needF(m)&&(TRY[m.id]||0)<2){TRY[m.id]=(TRY[m.id]||0)+1;tried.delete(m.id);retry++}});if(retry)setTimeout(()=>{if(tab=="stats"&&!inD&&!busy)lst()},25000)}
+const TRY={};
+
+/* ---------- detaliu meci ---------- */
+/* ===== file meci: Evenimente / Formații / H2H ===== */
+const nm=o=>typeof o=="string"?o:(o&&(o.name||o.shortName))||"";
+const SEG4=[["sum","Rezumat"],["ev","Evenimente"],["lu","Formații"],["h2h","H2H"]];
+const firstArr=(o,re)=>{if(Array.isArray(o))return o;if(!o||typeof o!="object")return[];for(const k in o){if(re&&re.test(k)&&Array.isArray(o[k]))return o[k]}for(const k in o){if(Array.isArray(o[k]))return o[k]}return[]};
+const pn=p=>typeof p=="string"?p:(p&&(p.name||p.fullName||p.playerName||(p.player&&pn(p.player))))||"";
+const note=t=>`<div class="ctr" style="padding:30px 10px">${t}</div>`;
+const stNote=(S0,what)=>!S0||S0.st=="load"?note("Se încarcă…"):S0.st=="err"?note("Indisponibil: "+esc(S0.err)+"<br><small>"+what+" poate necesita planul Developer OpenFoot.</small>"):null;
+function evPanel(m){if(m.demo)return note("Disponibil doar pentru meciuri reale.");if(!(m._live||m._done))return note("Evenimentele apar după începerea meciului.");
+ const bad=stNote(m.ev,"Evenimentele");if(bad)return bad;
+ const L=firstArr(m.ev.data,/event|timeline/i);if(!L.length)return note("Niciun eveniment înregistrat încă.");
+ const rows=L.slice().sort((a,b)=>(+a.minute||0)-(+b.minute||0)).map(e=>{const t=String(e.type||e.kind||e.eventType||e.event||"").toLowerCase(),
+  ic=/own/.test(t)?"⚽ (a.p.)":/goal|gol/.test(t)?"⚽":/red/.test(t)?"🟥":/yellow|card/.test(t)?"🟨":/sub/.test(t)?"🔁":"•";
+  const sd=String(e.team&&typeof e.team=="string"?e.team:e.side||e.teamSide||"").toLowerCase(),home=sd=="home"||(e.teamId!=null&&e.teamId==m.ids[0])||(e.team&&e.team.id!=null&&e.team.id==m.ids[0]);
+  const who=pn(e.player)||(typeof e.player=="string"?e.player:""),extra=[e.assist?"pasă: "+pn(e.assist):"",e.playerOut?"↔ "+pn(e.playerOut):""].filter(Boolean).join(" · ");
+  const body=`${ic} <b>${esc(who)}</b>${extra?`<small>${esc(extra)}</small>`:""}`,mn=(e.minute!=null?e.minute+"'":"")+(e.detail&&/\+/.test(e.detail)?`<small>${esc(e.detail)}</small>`:"");
+  return`<div class="evr"><div class="l">${home?body:""}</div><div class="mn">${mn}</div><div>${home?"":body}</div></div>`}).join("");
+ return`<h2>Cronologie</h2><div class="cp">${rows}</div>${m._live?`<div class="st"><button class="p" data-act="evr">Actualizează</button></div>`:""}`}
+function luPanel(m){if(m.demo)return note("Disponibil doar pentru meciuri reale.");const bad=stNote(m.lu,"Formațiile");if(bad)return bad;
+ const d=m.lu.data;let H0,A0;if(Array.isArray(d)&&d.length>=2){H0=d[0];A0=d[1]}else if(d){H0=d.home||(d.lineups&&d.lineups.home);A0=d.away||(d.lineups&&d.lineups.away)}
+ if(!H0&&!A0)return note("Formații indisponibile pentru acest meci.");
+ const pl=p=>`<div class="pr"><b>${esc(p.number??p.shirtNumber??"")}</b><span>${esc(pn(p))}</span><small>${esc(p.position||p.pos||"")}</small></div>`;
+ const side=(x,name)=>{if(!x)return"";const st=firstArr(x,/start|xi|lineup|players/i),bn=firstArr(x,/bench|subst/i);
+  return`<h2>${esc(name)} <span style="color:var(--em)">${esc(x.formation||x.tacticalFormation||"")}</span></h2><div class="cp">${st.length?st.map(pl).join(""):`<div class="sub">Titulari neconfirmați.</div>`}${bn.length&&bn!==st?`<details class="ac"><summary>Rezerve (${bn.length})</summary>${bn.map(pl).join("")}</details>`:""}</div>`};
+ return side(H0,m.teams.home.name)+side(A0,m.teams.away.name)}
+function hhCards(m){if(m.demo)return note("Disponibil doar pentru meciuri reale.");const S0=m.hh;
+ if(!S0||S0.st=="load")return note("Se încarcă…");
+ if(S0.st=="err")return note("Indisponibil: "+esc(S0.err));
+ const L=firstArr(S0.data,/match|meeting|recent|result|histor/i).filter(x=>x&&(x.homeTeam||x.home)).slice(0,5);
+ if(!L.length)return note("Nicio întâlnire anterioară găsită.");
+ return L.map(x=>{const ht=x.homeTeam||x.home,at=x.awayTeam||x.away,sc=x.score||{},hs=sc.home??x.homeScore,as=sc.away??x.awayScore,dt=x.kickoffAt||x.date,
+  ds=dt?new Date(dt).toLocaleDateString("ro-RO",{day:"numeric",month:"short",year:"numeric"}):"",vn=nm(x.venue),
+  lg=x.competitionId?pl(x.competitionId).name:nm(x.competition||x.league),stt=x.status=="finished"?"FT":x.status=="live"?"LIVE":(x.status||"");
+  const tm=t=>({name:nm(t),logo:t&&t.logoUrl});
+  return`<div class="hhc"><div class="hht">${esc(ds)}${vn?" · "+esc(vn):""}</div><div class="hhm"><div class="t">${cs(tm(ht))}<span>${esc(nm(ht))}</span></div><div class="sc2">${hs??"-"} – ${as??"-"}</div><div class="t r"><span>${esc(nm(at))}</span>${cs(tm(at))}</div></div><div class="hhb"><span>${esc(lg)}</span><b>${esc(stt)}</b></div></div>`}).join("")}
+function hhPanel(m,ctx){const hh=ctx&&ctx.headToHead,ents=hh&&typeof hh=="object"?Object.entries(hh).filter(x=>typeof x[1]=="number"):[];
+ const lab=k=>k.replace(/([A-Z])/g," $1").replace(/_/g," ").toLowerCase();
+ const chips=ents.length?`<div class="hkg">${ents.map(([k,v])=>`<div class="hk"><b>${v}</b><small>${esc(lab(k))}</small></div>`).join("")}</div>`:`<div class="sub">Rezumatul H2H nu e disponibil pentru acest meci.</div>`;
+ return`<h2>Rezumat H2H</h2><div class="cp">${chips}</div><h2>Head-to-Head (ultimele 5)</h2>${hhCards(m)}`}
+
+async function detail(id){const m=M.find(x=>String(x.id)==String(id));if(!m)return;inD=true;curId=id;window.scrollTo(0,0);
+ let mk={},ctx=null,err="",loadingF=false,dtab="sum";
+ const draw=()=>{const h=m.teams.home,a=m.teams.away,A=TS(h.name),B=TS(a.name),H=ctx&&ctx.home,W=ctx&&ctx.away,an=ctx&&ctx.analytics,ob=an&&an.oddsBenchmark,xg=an&&an.expectedGoals;
+  const fv=(v,k)=>v==null?"—":k=="p"?Math.round(v)+"%":k=="d"?v.toFixed(1):Math.round(v);
+  const cmp=(l,x,y,max,k)=>{if(x==null&&y==null)return"";const w=v=>v==null?0:Math.min(100,v/max*100);
+   return`<div class="cmp"><div class="lb">${l}</div><div class="bw"><b>${fv(x,k)}</b><div class="tl"><i style="width:${w(x)}%"></i></div><div class="tr2"><i style="width:${w(y)}%"></i></div><b>${fv(y,k)}</b></div></div>`};
+  const mx=(x,y,f)=>Math.max(x||0,y||0,f);
+  const ht=fdAvg(m,"ht")??afP(m,"h1"),st=fdAvg(m,"st")??afP(m,"h2");const px=ob?{h:ob.impliedHomeWinPct,d:ob.impliedDrawPct,a:ob.impliedAwayWinPct}:(A&&B&&A.n&&B.n?(()=>{let H=(A.w/A.n+B.l/B.n)/2,D=(A.d/A.n+B.d/B.n)/2,V=(A.l/A.n+B.w/B.n)/2,t=H+D+V;return t>0?{h:H/t*100,d:D/t*100,a:V/t*100}:null})():null);
+  const sc=m._live||m._done,rk=[H&&H.tablePosition,W&&W.tablePosition];
+  const rows=[H&&W?cmp("Elo",H.elo,W.elo,mx(H.elo,W.elo,1),"i")+cmp("Puncte (ultimele 5)",H.pointsLast5,W.pointsLast5,15,"i")+cmp("Goluri marcate (ult. 5)",H.goalsScoredLast5,W.goalsScoredLast5,mx(H.goalsScoredLast5,W.goalsScoredLast5,1),"i")+cmp("Goluri primite (ult. 5)",H.goalsConcededLast5,W.goalsConcededLast5,mx(H.goalsConcededLast5,W.goalsConcededLast5,1),"i")+cmp("Zile de odihnă",H.restDays,W.restDays,mx(H.restDays,W.restDays,1),"i"):"",
+   xg?cmp("Goluri așteptate (xG)",xg.homeXG,xg.awayXG,3,"d"):"",
+   cmp("Goluri marcate / meci",A&&A.ag,B&&B.ag,4,"d"),cmp("Goluri primite / meci",A&&A.ac,B&&B.ac,4,"d"),cmp("Ambele marchează",A&&A.gg,B&&B.gg,100,"p"),cmp("Peste 1.5 goluri",A&&A.o15,B&&B.o15,100,"p"),cmp("Peste 2.5 goluri",A&&A.o25,B&&B.o25,100,"p"),cmp("Gol repriza 1",(fdv(h.name)||{}).ht,(fdv(a.name)||{}).ht,100,"p"),cmp("Gol repriza 2",(fdv(h.name)||{}).st,(fdv(a.name)||{}).st,100,"p")].join("");
+  const fH=A?dotsH(h.name):dotsS(H&&H.form),fA=B?dotsH(a.name):dotsS(W&&W.form);
+  const tabsBar=`<div class="seg" style="grid-template-columns:repeat(4,1fr);margin:14px 0 4px">${SEG4.map(t=>`<button data-act="dtab" data-v="${t[0]}" class="${dtab==t[0]?"on":""}">${t[1]}</button>`).join("")}</div>`;
+  const panel=()=>dtab=="ev"?evPanel(m):dtab=="lu"?luPanel(m):hhPanel(m,ctx);
+  V.innerHTML=`<button class="bk" data-act="back">‹ Meciuri</button>
+  <div class="mh"><div class="lg">${esc(m.league.country)}${m.league.country?" · ":""}${esc(m.league.name)}</div>
+  <div class="tt"><div>${crest(h,rk[0])}<div class="n">${esc(h.name)}</div></div><div class="sc">${sc?(m.goals.home??"-")+" – "+(m.goals.away??"-"):hhmm(m)}<small>${m._live?(m.per=="HT"?"Pauză":"LIVE"+(m.min?" "+m.min+"'":"")):m._done?"Final":m._st=="postponed"?"Amânat":m._st=="cancelled"?"Anulat":"Neînceput"}</small></div><div>${crest(a,rk[1])}<div class="n">${esc(a.name)}</div></div></div></div>
+  ${tabsBar}${dtab=="sum"?`${px?`<h2>Șanse 1X2 (model)</h2><div class="cp"><div class="xb"><i class="a" style="flex:${px.h}">${Math.round(px.h)}%</i><i class="b" style="flex:${px.d}">${Math.round(px.d)}%</i><i class="c" style="flex:${px.a}">${Math.round(px.a)}%</i></div><div class="xl"><span>Gazde</span><span>Egal</span><span>Oaspeți</span></div></div>`:""}
+  <h2>Probabilități goluri</h2><div class="st" style="margin:-4px 0 8px;font-size:12px">Calculat pe ${last7(h.name).length} meciuri ${esc(h.name)} · ${last7(a.name).length} meciuri ${esc(a.name)}${Math.min(last7(h.name).length,last7(a.name).length)<6?" — puține meciuri, ia procentele cu prudență":""}</div><div class="gr">${[["Ambele marchează",avg2(A,B,"gg")],["Peste 1.5",avg2(A,B,"o15")],["Peste 2.5",avg2(A,B,"o25")],["Peste 3.5",avg2(A,B,"o35")],["Sub 2.5",avg2(A,B,"u25")],["1 sau 2",avg2(A,B,"x12")],["1X",dc(m,"x1")],["X2",dc(m,"x2")]].concat(ht!=null?[["Gol repriza 1",ht]]:[],st!=null?[["Gol repriza 2",st]]:[]).map(x=>`<div>${ring(x[1],58)}${x[0]}</div>`).join("")}</div>
+  ${m.fdn?`<div class="st" style="margin-top:10px">${esc(m.fdn)}</div>`:""}
+  ${!A||!B?`<div class="st" style="margin-top:10px">${loadingF?"Se încarcă istoricul echipelor…":noTF?"Pentru procente trebuie adăugată ruta /team-form pe server.":"Istoric insuficient pentru aceste echipe."}${!m.demo&&!loadingF&&!noTF?`<button class="p" data-act="calc1">Calculează</button>`:""}</div>`:""}
+  <h2>Comparație</h2><div class="cp"><div class="fm"><span style="color:var(--em)">${esc(h.name)}</span><span style="color:var(--bl)">${esc(a.name)}</span></div>${rows||`<div class="sub">Date indisponibile încă.</div>`}</div>
+  <h2>Formă</h2><div class="cp"><div class="fm"><span>${esc(h.name)}</span><span class="dts">${fH||"—"}</span></div><div class="fm"><span>${esc(a.name)}</span><span class="dts">${fA||"—"}</span></div></div>
+  ${afBox(m,"yc","Cartonașe galbene","🟨",3.5)}
+  ${afBox(m,"co","Cornere","🚩",8.5)}
+  <h2>Head-to-Head (ultimele 5)</h2>${hhCards(m)}
+  ${m.demo?"":`<details class="ac"><summary>Date brute (depanare)</summary><p><button class="btn" data-act="copy">Copiază JSON</button></p><pre id="rw"></pre></details>`}`:panel()}`;
+  const rw=$("#rw");if(rw)rw.textContent=JSON.stringify({id:m.id,markets:mk,context:ctx,error:err},null,1).slice(0,5000);window.__raw=JSON.stringify({id:m.id,markets:mk,context:ctx},null,1);window.__one=()=>{loadingF=true;draw();loadForm(m).catch(noRoute).finally(()=>{loadingF=false;if(inD&&curId==id)draw()})}};
+ const load=async(key,path0,force)=>{let path=path0;const afp=m.afid?(key=="ev"?"/af-events?id="+m.afid+"&home="+m.afh:key=="lu"?"/af-lineups?id="+m.afid+"&home="+m.afh:"/af-h2h?home="+m.afh+"&away="+m.afa):null;if(m.af)path=afp;const o=m[key];if(!force&&o&&(o.st=="ok"||o.st=="load"||(o.st=="err"&&Date.now()-o.t<6e4)))return;m[key]={st:"load"};draw();
+  try{const go1=p=>sf(p+(force?"&r="+Date.now():""),undefined,force?0:(key=="hh"?864e5:key=="lu"?18e5:0));let j;
+   if(afp&&!m.af){try{j=await go1(afp)}catch(e1){j=await go1(path0)}}else j=await go1(path);
+   m[key]={st:"ok",data:j.data!==undefined?j.data:j}}catch(e){m[key]={st:"err",err:e.message,t:Date.now()}}if(inD&&curId==id)draw()};
+ window.__tab=v=>{dtab=v;draw();window.scrollTo(0,0);if(m.demo)return;if(v=="ev"&&(m._live||m._done))load("ev","/match-events?id="+encodeURIComponent(m.id));if(v=="lu")load("lu","/match-lineups?id="+encodeURIComponent(m.id));if(v=="h2h")window.__hh()};
+ window.__hh=()=>load("hh","/h2h?home="+encodeURIComponent(m.ids[0])+"&away="+encodeURIComponent(m.ids[1]));
+ window.__evr=()=>load("ev","/match-events?id="+encodeURIComponent(m.id),true);
+ draw();
+ if(!m.demo){if(!m.af){const q="?id="+encodeURIComponent(m.id)+"&home="+encodeURIComponent(m.teams.home.name)+"&away="+encodeURIComponent(m.teams.away.name)+"&date="+encodeURIComponent(m._d||"");
+  const[r1,r2]=await Promise.allSettled([Promise.resolve({markets:{}}),sf("/match-analysis?id="+encodeURIComponent(m.id),undefined,6e5)]);
+  mk=r1.status=="fulfilled"?r1.value.markets||{}:{};ctx=r2.status=="fulfilled"?(r2.value.data!==undefined?r2.value.data:r2.value):null;err=r2.status=="rejected"?r2.reason.message:""}
+  if(inD&&curId==id){draw();window.__hh();if(!noTF&&(!TS(m.teams.home.name)||!TS(m.teams.away.name)))window.__one();loadFD(m,()=>{if(inD&&curId==id)draw()})}}}
+
+
+/* ---------- reprize din football-data.org (prin server) ---------- */
+async function loadFD(m,redraw){if(m.demo)return;const names=[m.teams.home.name,m.teams.away.name],ok1=n=>{const a=AFS[n.toLowerCase()];return a&&a.s};
+ if(!ok1(names[0])||!ok1(names[1])){await afTeam(names[0],true,natLg(m),true);await afTeam(names[1],true,natLg(m),true);m.afl=1}
+ const fromAF=n=>{const af=AFS[n.toLowerCase()];if(af&&af.n>=4){const L=af.n;return{ht:Math.round(af.h1.reduce((x,y)=>x+y,0)/L*10000)/100,st:Math.round(af.h2.reduce((x,y)=>x+y,0)/L*10000)/100,n:L}}return null};
+ names.forEach(n=>{const v=fromAF(n);if(v)fdS[n.toLowerCase()]=v});
+ if(names.every(n=>fdv(n))){m.fdn="";redraw();return}
+ if(fdOff){m.fdn="Reprize indisponibile"+(afErr?" (API-Football: "+afErr+")":": echipele nu au suficiente meciuri cu scor la pauză.");redraw();return}
+ m.fdn="Se încarcă reprizele…";redraw();
+ try{for(const n of names){const k=n.toLowerCase();if(fdv(n))continue;const ck="fd_"+k,c=LS.get(ck,null);
+   if(c&&Date.now()-c.t<12*36e5&&c.v&&!c.v.na){fdS[k]=c.v;continue}
+   const j=await sf("/fd-team-form?name="+encodeURIComponent(n),90000);let v={na:true};
+   if(j.found){const L=(j.matches||[]).filter(x=>x.ht&&x.ht.home!=null&&x.ht.away!=null&&x.ft&&x.ft.home!=null&&x.ft.away!=null).slice(-7);
+    if(L.length>=4){const h1=L.filter(x=>x.ht.home+x.ht.away>0).length,h2=L.filter(x=>(x.ft.home+x.ft.away)-(x.ht.home+x.ht.away)>0).length;
+     v={ht:Math.round(h1/L.length*10000)/100,st:Math.round(h2/L.length*10000)/100,n:L.length};LS.set(ck,{t:Date.now(),v})}}
+   fdS[k]=v}
+  m.fdn=names.some(n=>fdv(n))?"":"Reprize indisponibile: echipele nu au suficiente meciuri cu scor la pauză."+(afErr?" (API-Football: "+afErr+")":"")}
+ catch(e){m.fdn="Reprize indisponibile: "+e.message;if(/token|key|403|401|not found|route/i.test(e.message))fdOff=true}
+ redraw()}
+
+/* ---------- server ---------- */
+function xhr(u){return new Promise((res,rej)=>{const x=new XMLHttpRequest();x.open('GET',u);x.onload=()=>res({ok:x.status>=200&&x.status<300,status:x.status,json:()=>Promise.resolve().then(()=>JSON.parse(x.responseText))});x.onerror=()=>rej(new Error('Load failed'));x.send()})}
+async function gx(u){try{return await fetch(u)}catch(e){return await xhr(u)}}
+async function sf(path,ms,ttl){if(cache[path])return cache[path];if(ttl){const pc=LS.get("p_"+path,null);if(pc&&Date.now()-pc.t<ttl){cache[path]=pc.j;return pc.j}}let t;
+ try{const r=await Promise.race([gx(SERVER+path),new Promise((_,rej)=>{t=setTimeout(()=>rej(new Error("Timp depășit")),ms||30000)})]);const j=await r.json().catch(()=>({}));if(!r.ok||j.success===false)throw new Error(j.error||"Eroare server "+r.status);cache[path]=j;if(ttl)LS.set("p_"+path,{t:Date.now(),j});if(j&&j.meta&&j.meta.access&&j.meta.access.quota)Q=j.meta.access;return j}finally{clearTimeout(t)}}
+let Q=null;
+function paint(){if(tab=="stats"&&!inD)lst();else if(tab=="home")home()}
+let trunc=false;const hasMore=o=>{if(!o||typeof o!="object")return false;for(const k in o){if(/cursor/i.test(k)&&o[k])return true;if(o[k]&&typeof o[k]=="object"&&hasMore(o[k]))return true}return false};
+const cnt=()=>{const c=d=>M.filter(m=>m._d==ymd(d)).length;return M.length+" meciuri (azi "+c(0)+" · mâine "+c(1)+" · poimâine "+c(2)+")"+(trunc?" ⚠ listă incompletă":"")};
+let afFxOff=false,afFxErr="";
+const nzt=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\b(fc|afc|cf|sc|ac|fk|cd|ud|sv|club|the)\b/g,"").replace(/[^a-z0-9]/g,"");
+const nzs=(a,b)=>{a=nzt(a);b=nzt(b);return !!a&&!!b&&(a==b||(a.length>3&&b.length>3&&(a.includes(b)||b.includes(a))))};
+function normAF(f){if(!f||f.id==null||!f.home||!f.away)return null;const t=f.kickoff?new Date(f.kickoff):null,ok=t&&!isNaN(t),st=f.status||"scheduled";
+ return{id:"af_"+f.id,ids:[],af:1,afid:f.id,afh:f.home.id,afa:f.away.id,league:{name:(f.league&&f.league.name)||"",country:(f.league&&f.league.country)||""},teams:{home:{name:f.home.name,logo:f.home.logo},away:{name:f.away.name,logo:f.away.logo}},goals:{home:nn(f.goals&&f.goals.home),away:nn(f.goals&&f.goals.away)},_t:ok?t:null,_tk:!!ok&&f.status!="tbd",_live:st=="live",_done:st=="finished",_st:st,min:nn(f.minute)||0,per:f.period||"",_d:ok?ldate(t):""}}
+function mergeAF(base,af){const out=base.slice();af.forEach(a=>{const b=base.find(b=>b._d==a._d&&nzs(b.teams.home.name,a.teams.home.name)&&nzs(b.teams.away.name,a.teams.away.name));if(b){b.afid=a.afid;b.afh=a.afh;b.afa=a.afa;return}out.push(a)});return out}
+const fx=async d=>{
+ if(d<0){const c=LS.get("cf_"+ymd(d),null);
+  if(c)return c.map(x=>({id:x[0],ids:[],league:{name:"",country:""},teams:{home:{name:x[1]},away:{name:x[2]}},goals:{home:x[3],away:x[4]},_t:x[5]?new Date(x[5]):null,_tk:true,_live:false,_done:true,_st:"finished",min:0,per:"",_d:ymd(d),_fd:ymd(d)}))}
+ const j=await sf("/fixtures?date="+ymd(d)+"&timezone=Europe/London",undefined,d==0?12e4:d>0?18e5:0);
+ if(d>=0){const pg=(j&&j.meta&&j.meta.pagination)||(j&&j.pagination);if(pg&&pg.next_cursor)trunc=true}
+ let list=toArr(j).map(norm).filter(Boolean).map(m=>(m._fd=ymd(d),m));
+ if(!afFxOff){try{const aj=await sf("/af-fixtures?date="+ymd(d)+"&timezone=Europe/London",undefined,d==0?12e4:d>0?18e5:864e5);list=mergeAF(list,toArr(aj).map(normAF).filter(Boolean).map(m=>(m._fd=ymd(d),m)))}catch(e){afFxErr=e.message;if(/route|not found|key|plan|subscription|access/i.test(e.message))afFxOff=true}}
+ if(d<0&&list.length&&list.every(m=>m._done||m._st=="cancelled"||m._st=="postponed"))LS.set("cf_"+ymd(d),list.filter(m=>m._done&&m.goals.home!=null&&m.goals.away!=null).map(m=>[m.id,m.teams.home.name,m.teams.away.name,m.goals.home,m.goals.away,m._t?+m._t:0]));
+ return list};
+function prune(){try{for(let i=localStorage.length-1;i>=0;i--){const k=localStorage.key(i);if(k&&k.startsWith("p_")){const v=JSON.parse(localStorage.getItem(k));if(!v||Date.now()-v.t>864e5)localStorage.removeItem(k)}if(k&&k.startsWith("cf_")){const dt=new Date(k.slice(3));if(Date.now()-dt>12*864e5)localStorage.removeItem(k)}}}catch(e){}}
+async function connect(){prune();let up=false;
+ for(let i=1;i<=5&&!up;i++){msg=`Se pornește serverul… (${i}/5)`;paint();
+  try{let t;const r=await Promise.race([fetch(SERVER+"/health"),new Promise((_,rej)=>{t=setTimeout(()=>rej(new Error("t")),20000)})]);clearTimeout(t);up=r.ok}catch(e){await wait(2500)}}
+ if(!up){mode="demo";msg="Mod demo — serverul nu răspunde.";paint();return}
+ try{const mp=new Map();(await Promise.all([0,1,2].map(fx))).flat().forEach(m=>mp.set(m.id,m));const all=[...mp.values()];
+  if(!all.length){mode="demo";msg="Mod demo — serverul nu a întors meciuri.";paint();return}
+  M=all;mode="live";hist={};seen=new Set();fdName={};formDone={};addHist(M.map(m=>({...m})));msg="Date reale · "+cnt();paint();past();settleRoyal()}
+ catch(e){mode="demo";msg="Mod demo — "+e.message;paint()}}
+async function past(){for(let d=1;d<=7;d++){try{addHist(await fx(-d));if(!busy)msg=`Date reale · ${cnt()} · istoric ${d}/7`;if(d%2==0||d==7)paint()}catch(e){msg="Date reale · istoric incomplet: "+e.message;paint();return}}}
+
+/* ---------- meniu / setări ---------- */
+const LEGAL_UPD="6 octombrie 2026";
+const INFO={profile:["Profil","Crown Admin — membru VIP."],
+privacy:["Confidențialitate",`<div class="legal"><p>Ultima actualizare: ${LEGAL_UPD}</p>
+<h3>Ce date colectăm</h3><p>Crown Analytics nu are conturi și nu îți cere nume, e-mail sau parolă. Nu folosim reclame și nu urmărim ce faci în aplicație.</p>
+<h3>Ce rămâne pe telefonul tău</h3><ul><li>Treasury (pariurile și bugetul tău), predicțiile Royal League, setările și datele temporare (cache) sunt salvate doar în browserul acestui telefon.</li><li>Dacă ștergi datele site-ului din Safari sau șterge aplicația de pe ecran, acestea se pierd. Noi nu avem o copie.</li></ul>
+<h3>Ce se trimite pe internet</h3><p>Aplicația cere meciuri, scoruri și statistici de la serverul nostru, care la rândul lui le ia de la furnizori de date sportive (API-Football și alții). Cererile conțin doar numele echipelor, datele și identificatorii meciurilor. Ca la orice site, serverul și furnizorii pot vedea adresa ta IP în jurnalele tehnice normale.</p>
+<h3>Ce nu facem</h3><p>Nu vindem date, nu cerem date de card în această aplicație și nu partajăm Treasury-ul tău cu nimeni.</p>
+<h3>Drepturile tale</h3><p>Poți șterge oricând datele salvate din Safari (Setări → Safari → Avansat → Date site web) sau eliminând aplicația de pe ecranul principal.</p></div>`],
+terms:["Termeni de utilizare",`<div class="legal"><p>Ultima actualizare: ${LEGAL_UPD}</p>
+<h3>1. Ce este aplicația</h3><p>Crown Analytics afișează statistici și estimări de probabilitate despre meciuri de fotbal. Este un instrument informativ. Nu este casă de pariuri, nu acceptă mize și nu plasează pariuri în numele tău.</p>
+<h3>2. Doar pentru adulți</h3><p>Aplicația este destinată persoanelor de cel puțin 18 ani. Dacă ai sub 18 ani, nu o folosi.</p>
+<h3>3. Fără garanții</h3><p>Procentele, biletele generate și „Royal League” sunt estimări calculate din meciuri recente, uneori puține. Ele nu garantează rezultate și nu sunt sfat financiar sau de pariuri. Datele pot fi incomplete, întârziate sau greșite.</p>
+<h3>4. Răspunderea ta</h3><p>Orice decizie de a paria îți aparține. Nu paria bani pe care nu îți permiți să îi pierzi. Respectă legile din țara ta și folosește doar operatori licențiați.</p>
+<h3>5. Limitarea răspunderii</h3><p>În măsura permisă de lege, nu răspundem pentru pierderi rezultate din folosirea aplicației sau din indisponibilitatea datelor.</p>
+<h3>6. Date și mărci</h3><p>Datele sportive aparțin furnizorilor lor. Numele echipelor și siglele aparțin proprietarilor lor și apar doar în scop informativ.</p>
+<h3>7. Modificări</h3><p>Putem schimba aplicația sau acești termeni. Continuarea folosirii înseamnă acceptarea variantei curente.</p></div>`],
+eula:["Licență utilizator",`<div class="legal"><p>Ultima actualizare: ${LEGAL_UPD}</p><p>Ți se acordă o licență personală, neexclusivă și revocabilă de a folosi Crown Analytics pe propriile dispozitive, în scop necomercial.</p><p>Nu ai voie să copiezi, să revinzi, să distribui sau să încerci să extragi în masă datele aplicației, nici să o folosești pentru a încălca legea sau drepturile altora.</p><p>Aplicația este oferită „ca atare”, fără garanții de niciun fel. Consultă și Termenii de utilizare și Confidențialitatea.</p></div>`],
+resp:["Joc responsabil",`<div class="legal"><p><b>18+</b> · Pariurile pot crea dependență. Joacă doar cu bani pe care îți permiți să îi pierzi.</p>
+<ul><li>Stabilește dinainte un buget și o limită de timp și nu le depăși.</li><li>Nu urmări pierderile și nu paria ca să recuperezi.</li><li>Nu paria când ești supărat, obosit sau sub influența alcoolului.</li><li>Fă pauze. Majoritatea operatorilor licențiați permit limite de depunere și auto-excludere.</li></ul>
+<h3>Ajutor în Marea Britanie</h3><p>National Gambling Helpline: <b>0808 8020 133</b> (gratuit, 24/7) · <b>begambleaware.org</b> · <b>gamstop.co.uk</b> pentru auto-excludere.</p>
+<h3>În alte țări</h3><p>Caută serviciul național de ajutor pentru jocuri de noroc din țara ta.</p></div>`]};
+function menu(o){$("#ov").classList.toggle("o",o);if(!o)return;
+ $("#dr").innerHTML=`<div class="box" style="color:#04281c;background:linear-gradient(135deg,#19d38a,#0f7f6b);font-weight:800">👑 Crown Admin<br><small>Membru VIP</small></div>`+
+ [["profile","👤 Profil"],["stats","📊 Statistici"],["settings","⚙️ Setări"],["privacy","🛡️ Confidențialitate"],["terms","📋 Termeni"],["eula","📄 Licență"],["resp","🔞 Joc responsabil"]].map(x=>`<button class="mi" data-act="mgo" data-v="${x[0]}"><span>${x[1]}</span><span>›</span></button>`).join("")+`<button class="btn" data-act="mclose" style="width:100%;margin-top:6px">Închide</button>`}
+function page(k){menu(false);inD=false;tab="";nav();window.scrollTo(0,0);
+ if(k=="settings")V.innerHTML=`<h1>Setări</h1><div class="box">Adresa serverului<input class="in" id="sv" value="${esc(SERVER)}" style="margin:10px 0"><button class="btn" data-act="save">Salvează și reconectează</button><p style="font-size:12.5px">Orele se afișează în fusul telefonului.</p><p style="font-size:12.5px;color:var(--mu)">Versiune aplicație: <b id="ver">2026-10-06 · v10:30 (H2H, cornere și cartonașe pentru toate meciurile)</b></p><button class="btn" data-act="first" style="background:var(--s2);color:var(--tx)">Arată primul meci (depanare)</button><pre id="tr"></pre></div><div class="box">Test reprize (football-data.org)<input class="in" id="fdq" placeholder="Echipă, ex. Arsenal" style="margin:10px 0"><button class="btn" data-act="fdt">Testează reprizele</button><pre id="fdr"></pre></div>`;
+ else{const i=INFO[k];V.innerHTML=`<h1>${i[0]}</h1><div class="box">${i[1]}</div>`}}
+
+document.addEventListener("click",async e=>{
+ if(e.target.id=="ov"){menu(false);return}
+ const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act,v=el.dataset.v;
+ if(a=="tab")go(v);else if(a=="menu")menu(true);else if(a=="mclose")menu(false);
+ else if(a=="mgo"){if(v=="stats"){menu(false);go("stats")}else page(v)}
+ else if(a=="gday"){const i=G.days.indexOf(+v);i>=0?G.days.splice(i,1):G.days.push(+v);gen()}
+ else if(a=="gtr"){if(!G.t||!G.t.pick.length)return;const od=parseFloat(($("#gq").value||"").replace(",",".")),st=parseFloat(($("#gs").value||"").replace(",","."));
+  if(!(od>1)||!(st>0)){toast("Completează cota (>1) și miza");return}
+  TR.bets.push({id:Date.now(),t:Date.now(),ev:"Bilet Crown · "+G.t.pick.length+" meciuri",mk:G.t.pick.map(x=>x.m.teams.home.name+"–"+x.m.teams.away.name+": "+GM[x.k]).join("; "),odds:od,stake:st,st:"pending"});saveT();toast("Salvat în Treasury")}
+ else if(a=="gtop"){G.top=!G.top;gen()}
+ else if(a=="gmk"){const i=G.mks.indexOf(v);i>=0?(G.mks.length>1&&G.mks.splice(i,1)):G.mks.push(v);gen()}
+ else if(a=="ggo"){if(G.busy)return;G.n=Math.max(1,Math.min(10,parseInt($("#gn").value)||0));await genLoad();genBuild();gen()}
+ else if(a=="gcp"){try{await navigator.clipboard.writeText(G.txt||"");toast("Copiat")}catch(x){toast("Nu s-a putut copia")}}
+ else if(a=="tile"){const t=TILES[v];t[3]?go(t[3]):toast(t[1]+" — în curând")}
+ else if(a=="day"){S.day=+v;stats()}else if(a=="chip"){S.chip=v;stats()}else if(a=="mk"){S.mk=v;stats()}
+ else if(a=="open")detail(v);else if(a=="back"){inD=false;stats()}else if(a=="retry")connect();
+ else if(a=="dtab"&&window.__tab)window.__tab(v);else if(a=="hh"&&window.__hh)window.__hh();else if(a=="evr"&&window.__evr)window.__evr();else if(a=="calc")calcAll();else if(a=="calc1"&&window.__one)window.__one();
+ else if(a=="copy"){try{await navigator.clipboard.writeText(window.__raw||"");toast("Copiat")}catch(x){toast("Nu s-a putut copia")}}
+ else if(a=="save"){SERVER=$("#sv").value.trim().replace(/\/+$/,"");cache={};try{localStorage.setItem("crown_server",SERVER)}catch(x){}toast("Salvat");connect()}
+ else if(a=="fdt"){const o=$("#fdr"),n=($("#fdq").value||"").trim();if(!n){o.textContent="Scrie numele unei echipe.";return}o.textContent="Se caută…";
+  try{const j=await sf("/fd-team-form?name="+encodeURIComponent(n)+"&r="+Date.now(),90000);
+   if(!j.found){o.textContent="Echipa nu e în competițiile gratuite football-data.org.";return}
+   const L=(j.matches||[]).filter(x=>x.ht&&x.ht.home!=null&&x.ht.away!=null&&x.ft&&x.ft.home!=null).slice(-7);
+   if(!L.length){o.textContent=j.team.name+": niciun meci cu scor la pauză încă.";return}
+   const a=L.filter(x=>x.ht.home+x.ht.away>0).length,b=L.filter(x=>(x.ft.home+x.ft.away)-(x.ht.home+x.ht.away)>0).length;
+   o.textContent=j.team.name+" · "+L.length+" meciuri\nGol repriza 1: "+Math.round(a/L.length*100)+"%\nGol repriza 2: "+Math.round(b/L.length*100)+"%"+(L.length<4?"\n(sub 4 meciuri: în meci nu se afișează)":"")}
+  catch(e){o.textContent=/clon|Load failed|Failed to fetch/i.test(e.message)?"Conexiunea la server e blocată în acest ecran. Deschide linkul Netlify direct în Safari și încearcă acolo.\n("+e.message+")":"Eroare: "+e.message}}
+ else if(a=="first"){const m=M.find(x=>x._raw);$("#tr").textContent=m?JSON.stringify(m._raw,null,1).slice(0,4000):"Niciun meci real încărcat încă."}
+});
+/* ===== Royal League & Treasury (date salvate pe telefon) ===== */
+const LS={get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let RY=LS.get("crown_royal",{preds:[]}),TR=LS.get("crown_treasury",{start:1000,cur:"RON",bets:[]});
+const saveR=()=>LS.set("crown_royal",RY),saveT=()=>LS.set("crown_treasury",TR);
+const RANKS=[[0,"Scutier","🛡️"],[10,"Cavaler","⚔️"],[30,"Conte","🏰"],[60,"Duce","🦅"],[100,"Rege","👑"]];
+const rankOf=p=>{let i=0;RANKS.forEach((r,k)=>{if(p>=r[0])i=k});return i};
+const f2=n=>(Math.round(n*100)/100).toFixed(2);
+const PK={"1":"Gazde","X":"Egal","2":"Oaspeți"};
+
+async function settleRoyal(){const pend=RY.preds.filter(p=>!p.res&&Date.now()>p.t+3*36e5);if(!pend.length||mode!="live")return;let ch=false;
+ for(const fd of[...new Set(pend.map(p=>p.fd))]){try{const mm=new Map(toArr(await sf("/fixtures?date="+fd+"&timezone=Europe/London")).map(norm).filter(Boolean).map(m=>[m.id,m]));
+  try{toArr(await sf("/af-fixtures?date="+fd+"&timezone=Europe/London")).map(normAF).filter(Boolean).forEach(m=>mm.set(m.id,m))}catch(e){}
+  pend.filter(p=>p.fd==fd).forEach(p=>{const m=mm.get(p.mid);if(m&&m._done&&m.goals.home!=null&&m.goals.away!=null){const h=m.goals.home,a=m.goals.away;p.res={h,a};p.pts=(h>a?"1":h<a?"2":"X")==p.pick?3:0;ch=true}})}catch(e){}}
+ if(ch){saveR();if(tab=="royal")royal()}}
+
+function royal(){settleRoyal();const P=RY.preds,done=P.filter(p=>p.res),pts=done.reduce((s,p)=>s+(p.pts||0),0),ok=done.filter(p=>p.pts>0).length,ri=rankOf(pts),nx=RANKS[ri+1];
+ let streak=0;for(const p of done.slice().sort((a,b)=>b.t-a.t)){if(p.pts>0)streak++;else break}
+ const now=Date.now(),pick=new Map(P.map(p=>[p.mid,p.pick]));
+ const avail=M.filter(m=>!m.demo&&!m._live&&!m._done&&m._t&&m._tk&&m._t-now>0&&m._t-now<48*36e5).sort((a,b)=>a._t-b._t).slice(0,25);
+ V.innerHTML=`<h1>Royal League</h1><div class="sub">Pronostichează rezultatul final: 3 puncte pentru fiecare pronostic corect.</div>
+ <div class="hero" style="margin-top:12px"><div class="sub" style="color:#b8cde4">${RANKS[ri][2]} ${RANKS[ri][1]}</div><div class="big">${pts}<small style="font-size:16px"> puncte</small></div>
+ <div class="row"><span class="tag g">✓ ${ok}/${done.length} corecte</span><span class="tag">🔥 serie ${streak}</span>${nx?`<span class="tag">${nx[1]} la ${nx[0]} puncte</span>`:""}</div></div>
+ <h2>Meciuri disponibile (48h)</h2>${avail.length?avail.map(m=>`<div class="rrow"><div><b>${esc(m.teams.home.name)} – ${esc(m.teams.away.name)}</b><small>${hhmm(m)} · ${esc(m.league.name)}</small></div><div class="pk">${["1","X","2"].map(k=>`<button data-act="rpick" data-v="${esc(m.id)}|${k}" class="${pick.get(m.id)==k?"on":""}">${k}</button>`).join("")}</div></div>`).join(""):`<div class="ctr" style="padding:24px">${mode=="live"?"Niciun meci în următoarele 48h.":"Meciurile reale apar după conectarea la server."}</div>`}
+ <h2>Pronosticurile mele</h2>${P.length?P.slice().sort((a,b)=>b.t-a.t).slice(0,30).map(p=>`<div class="rrow"><div><b>${esc(p.h)} – ${esc(p.a)}</b><small>${PK[p.pick]} (${p.pick}) · ${p.res?`final ${p.res.h}–${p.res.a}`:"în așteptare"}</small></div><div>${p.res?`<span class="tag ${p.pts?"g":""}">${p.pts?"+3":"0"}</span>`:(Date.now()<p.t?`<button data-act="rdel" data-v="${esc(p.mid)}" aria-label="Șterge">✕</button>`:"")}</div></div>`).join(""):`<div class="ctr" style="padding:24px">Nu ai pronosticuri încă.</div>`}
+ <div class="st" style="margin-top:12px">Pronosticurile se salvează doar pe acest telefon.</div>`}
+
+function treasury(){const B=TR.bets,prof=b=>b.st=="won"?b.stake*(b.odds-1):b.st=="lost"?-b.stake:0;
+ const sett=B.filter(b=>b.st=="won"||b.st=="lost"),sum=B.reduce((s,b)=>s+prof(b),0),cur=TR.start+sum,staked=sett.reduce((s,b)=>s+b.stake,0);
+ const wins=sett.filter(b=>b.st=="won").length,roi=staked?sum/staked*100:0,wr=sett.length?wins/sett.length*100:0;
+ let run=TR.start;const pts=[run];B.slice().sort((a,b)=>a.t-b.t).filter(b=>b.st!="pending").forEach(b=>{run+=prof(b);pts.push(run)});
+ const mn=Math.min(...pts),mxv=Math.max(...pts),rg=(mxv-mn)||1,spark=pts.length>1?`<svg viewBox="0 0 300 60" style="width:100%;height:60px;margin-top:12px"><polyline fill="none" stroke="#19d38a" stroke-width="3" stroke-linejoin="round" points="${pts.map((v,i)=>(i/(pts.length-1)*300).toFixed(1)+","+(54-(v-mn)/rg*48).toFixed(1)).join(" ")}"/></svg>`:"";
+ const cs=TR.cur||"RON",cl=n=>n>0?"pos":n<0?"neg":"";
+ V.innerHTML=`<h1>Treasury</h1><div class="sub">Jurnalul tău de mize. Date salvate doar pe acest telefon.</div>
+ <div class="hero" style="margin-top:12px"><div class="sub" style="color:#b8cde4">Buget curent</div><div class="big">${f2(cur)} <small style="font-size:16px">${esc(cs)}</small></div>
+ <div class="row"><span class="tag ${sum>=0?"g":""}">${sum>=0?"+":""}${f2(sum)} profit</span><span class="tag">ROI ${f2(roi)}%</span><span class="tag">Câștigate ${f2(wr)}% (${wins}/${sett.length})</span></div>${spark}</div>
+ <h2>Pariu nou</h2><div class="cp"><input class="in" id="t_ev" placeholder="Eveniment (ex. Echipa A – Echipa B)"><div class="fi"><input class="in" id="t_mk" placeholder="Piață (ex. Peste 2.5)"><input class="in" id="t_od" inputmode="decimal" placeholder="Cotă"><input class="in" id="t_st" inputmode="decimal" placeholder="Miză (${esc(cs)})"><button class="btn" data-act="tadd">Adaugă</button></div></div>
+ <h2>Pariuri (${B.length})</h2>${B.length?B.slice().sort((a,b)=>b.t-a.t).map(b=>`<div class="rrow" style="grid-template-columns:1fr auto"><div><b>${esc(b.ev)}</b><small>${esc(b.mk||"—")} @ ${f2(b.odds)} · miză ${f2(b.stake)}</small>${b.st=="pending"?`<div class="bt"><button data-act="tres" data-v="${b.id}|won">✓ Câștigat</button><button data-act="tres" data-v="${b.id}|lost">✗ Pierdut</button><button data-act="tres" data-v="${b.id}|void">↺ Anulat</button></div>`:""}</div>
+ <div style="text-align:right"><div class="${cl(prof(b))}" style="font-weight:800">${b.st=="pending"?"în curs":b.st=="void"?"anulat":(prof(b)>=0?"+":"")+f2(prof(b))}</div><button data-act="tdel" data-v="${b.id}" aria-label="Șterge" style="color:var(--mu);margin-top:6px">✕</button></div></div>`).join(""):`<div class="ctr" style="padding:24px">Niciun pariu înregistrat.</div>`}
+ <h2>Buget inițial</h2><div class="cp"><div class="fi"><input class="in" id="t_s0" inputmode="decimal" value="${TR.start}"><button class="btn" data-act="tstart">Setează</button></div></div>
+ <div class="st" style="margin-top:14px">18+. Joacă responsabil: nu mizezi bani pe care nu îi poți pierde. Aplicația nu garantează câștiguri, statisticile sunt doar informative.</div>`}
+
+document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act,v=el.dataset.v;
+ if(a=="rpick"){const[id,pk]=v.split("|"),m=M.find(x=>String(x.id)==id);if(!m)return;const i=RY.preds.findIndex(p=>p.mid==m.id);
+  if(i>=0&&RY.preds[i].pick==pk)RY.preds.splice(i,1);else{const np={mid:m.id,h:m.teams.home.name,a:m.teams.away.name,t:+m._t,fd:m._fd||m._d,pick:pk};if(i>=0)RY.preds[i]=np;else RY.preds.push(np)}saveR();royal()}
+ else if(a=="rdel"){RY.preds=RY.preds.filter(p=>String(p.mid)!=v);saveR();royal()}
+ else if(a=="tadd"){const ev=$("#t_ev").value.trim(),od=parseFloat($("#t_od").value.replace(",",".")),st=parseFloat($("#t_st").value.replace(",","."));
+  if(!ev||!(od>1)||!(st>0)){toast("Completează eveniment, cotă (>1) și miză");return}TR.bets.push({id:Date.now(),t:Date.now(),ev,mk:$("#t_mk").value.trim(),odds:od,stake:st,st:"pending"});saveT();treasury()}
+ else if(a=="tres"){const[id,st]=v.split("|"),b=TR.bets.find(x=>String(x.id)==id);if(b){b.st=st;saveT();treasury()}}
+ else if(a=="tdel"){TR.bets=TR.bets.filter(x=>String(x.id)!=v);saveT();treasury()}
+ else if(a=="tstart"){const n=parseFloat($("#t_s0").value.replace(",","."));if(n>=0){TR.start=n;saveT();treasury()}}
+});
+
+demo();go("home");connect();
+</script>
+<script>(function(){var d=function(){var e=document.getElementById("sp");if(e){e.classList.add("h");setTimeout(function(){e.remove()},600)}};window.addEventListener("load",function(){setTimeout(d,1100)});setTimeout(d,5000)})()</script>
+</body>
+</html>
