@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Crown Sharp"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b0b0d"><title>Crown Sharp</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAESElEQVR4Xu3cy23jQBCEYXrhm+CrM3EKDtopOBNHsQcBgiBqqC5Od8/r/647Ioet2hIpG367XD424Jl/jAUlhAOEAzqaAzQHdDQHaA7oaA7QHNDRHKA5oKM5QHNAR3OA5oCO5gDNAR3NAZoDOpoDNAd0NAdoDuhoDtAc0NEcoDmgozlAc0BHc4DmgI7mAM0BHc0BmgO6d/0lc/r7+bq/sM/v3zmvU/HGH4x7iAURuVn9nuMgGdv24l+nt3Q4jpNxZVkzq3XDYX/X7Ssns2448NKi4VDLQF0/h0XDAQvCgSLCAcIB3aLNoX47rq6fw6LhgMW64bCXgX3lZJx/8DbczzZffoHRfzLiZu4WjnF/tsnOS3w+Vg7m2//Prkrd0HlnJMzcIRzHu7yyrIGdZZ6WNcdqw2HfgX1lstLGhtvwXuUl1IYDE6sKhxpMdX2ChE9uX+oM1fX3qsIxOsvgLGtmtXQ4EHtDOi57JdhXTmbR5lDfb3X9HKrCoX5NpK7HnjpDdf3qN6TnauDcq4ZW1RzbJgSzJsKOat7jmtc6sk/SvvKp2nAY81G5SzywzNOyJuNp5Xgf9bv0Uv9fv/4IXhJm7tAcV5/fv6Xt9jPQmZSmevBGqNx+n+PBfuvN+8Mxox1eS8SW3JrjJcf35gTfs/seTZV29rxw8FsdLtKSsW254WiVj4iBRhzzpeSTpjbHVfIVxp0u7shPJZ+uQXM0yccE8pPRLBxp/RE90+jjt/2/1OBj5ebv5yt0uKEHv7+KuGaKHtGxqHDYH7tz3sIR2Sdjn7YkKhwS+xTsIo5ZEnGuiGOqughH2i3IKHpIRssb0j3HiTgeysjxjI6HqtRLczjelrcarst5XQ7ipa9wLP750lUy+vpYual5fms739Nnr7nkON01x31E1Ms+/d44OrGHEy/JERiO+ofvbqfmqP4a6+dcEhgOF/bZ2VdGs+/EvrKJ3sNhvEXtbcqW/VjWtDVAOIz5GEv/yej0aeWpg2n2OejhNrw3RnNc9RkC1UBXMVI4rvl4GG7Ps95vtefdjt0cN7cR9z/rgbaaHY64R/D+Y3EvbrdxEx7phnQvbuK+RtlndnNgaIPdkCIT4UAR4QDhgI7mAM0BXXhzhH5Ls7jo2YaHA+MiHOCeAzqaAzQHdDQHaA7oMpoj+nF8TQlTzQgHBkU4wD0HdDQHaA7oaA7QHNAlNUfCQ/lScuaZFA6MiHCAew7oaA7QHNDRHKA5oMtrjpxH8xWkTTIvHBgO4QD3HNDRHCh6u1w+GA+eojnAPQd0NAdoDuje9ZecN+7f8u0K35CiPe45wD0HdDQHaA7oaA7QHNDRHKA5oKM5QHNAR3OA5oCO5kARv0MKPlag42MFNAd0NAdoDuhoDtAc0NEcoDmgozlAc0BHc4DmgI7mAM0BHc0BmgM6mgM0B3Q0B2gO6GgO0BzQ0RygOaCjOUBzQEdzgOaAjuZA0X/K5EECp+PHvQAAAABJRU5ErkJggg=="><link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAESElEQVR4Xu3cy23jQBCEYXrhm+CrM3EKDtopOBNHsQcBgiBqqC5Od8/r/647Ioet2hIpG367XD424Jl/jAUlhAOEAzqaAzQHdDQHaA7oaA7QHNDRHKA5oKM5QHNAR3OA5oCO5gDNAR3NAZoDOpoDNAd0NAdoDuhoDtAc0NEcoDmgozlAc0BHc4DmgI7mAM0BHc0BmgO6d/0lc/r7+bq/sM/v3zmvU/HGH4x7iAURuVn9nuMgGdv24l+nt3Q4jpNxZVkzq3XDYX/X7Ssns2448NKi4VDLQF0/h0XDAQvCgSLCAcIB3aLNoX47rq6fw6LhgMW64bCXgX3lZJx/8DbczzZffoHRfzLiZu4WjnF/tsnOS3w+Vg7m2//Prkrd0HlnJMzcIRzHu7yyrIGdZZ6WNcdqw2HfgX1lstLGhtvwXuUl1IYDE6sKhxpMdX2ChE9uX+oM1fX3qsIxOsvgLGtmtXQ4EHtDOi57JdhXTmbR5lDfb3X9HKrCoX5NpK7HnjpDdf3qN6TnauDcq4ZW1RzbJgSzJsKOat7jmtc6sk/SvvKp2nAY81G5SzywzNOyJuNp5Xgf9bv0Uv9fv/4IXhJm7tAcV5/fv6Xt9jPQmZSmevBGqNx+n+PBfuvN+8Mxox1eS8SW3JrjJcf35gTfs/seTZV29rxw8FsdLtKSsW254WiVj4iBRhzzpeSTpjbHVfIVxp0u7shPJZ+uQXM0yccE8pPRLBxp/RE90+jjt/2/1OBj5ebv5yt0uKEHv7+KuGaKHtGxqHDYH7tz3sIR2Sdjn7YkKhwS+xTsIo5ZEnGuiGOqughH2i3IKHpIRssb0j3HiTgeysjxjI6HqtRLczjelrcarst5XQ7ipa9wLP750lUy+vpYual5fms739Nnr7nkON01x31E1Ms+/d44OrGHEy/JERiO+ofvbqfmqP4a6+dcEhgOF/bZ2VdGs+/EvrKJ3sNhvEXtbcqW/VjWtDVAOIz5GEv/yej0aeWpg2n2OejhNrw3RnNc9RkC1UBXMVI4rvl4GG7Ps95vtefdjt0cN7cR9z/rgbaaHY64R/D+Y3EvbrdxEx7phnQvbuK+RtlndnNgaIPdkCIT4UAR4QDhgI7mAM0BXXhzhH5Ls7jo2YaHA+MiHOCeAzqaAzQHdDQHaA7oMpoj+nF8TQlTzQgHBkU4wD0HdDQHaA7oaA7QHNAlNUfCQ/lScuaZFA6MiHCAew7oaA7QHNDRHKA5oMtrjpxH8xWkTTIvHBgO4QD3HNDRHCh6u1w+GA+eojnAPQd0NAdoDuje9ZecN+7f8u0K35CiPe45wD0HdDQHaA7oaA7QHNDRHKA5oKM5QHNAR3OA5oCO5kARv0MKPlag42MFNAd0NAdoDuhoDtAc0NEcoDmgozlAc0BHc4DmgI7mAM0BHc0BmgM6mgM0B3Q0B2gO6GgO0BzQ0RygOaCjOUBzQEdzgOaAjuZA0X/K5EECp+PHvQAAAABJRU5ErkJggg==">
+<style>
+:root{--bg:#0b0b0d;--c1:#15151a;--c2:#1d1d24;--ln:#2a2a33;--gd:#f5c542;--gd2:#b8902a;--tx:#ececf1;--mu:#9a9aa8;--gr:#2ecc71;--rd:#ff5a5f;--bl:#4aa3ff}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--tx);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+body{padding:calc(env(safe-area-inset-top) + 8px) 16px calc(86px + env(safe-area-inset-bottom));max-width:720px;margin:0 auto;min-height:100dvh;background:radial-gradient(900px 380px at 50% -120px,#2a2108 0,transparent 70%),var(--bg)}
+.hd{display:flex;align-items:center;gap:10px;padding:6px 0 10px}
+.hd .lg{font-size:26px}.hd b{display:block;font-size:17px;letter-spacing:.14em;color:var(--gd)}.hd small{color:var(--mu);font-size:12px}
+.row{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}.row::-webkit-scrollbar{display:none}
+.ch{flex:none;padding:7px 13px;border-radius:999px;background:var(--c1);border:1px solid var(--ln);color:var(--mu);font-size:13.5px;font-weight:600}
+.ch.on{background:linear-gradient(180deg,#3a2d0a,#2a2108);border-color:var(--gd2);color:var(--gd)}
+.in{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--ln);background:var(--c1);color:var(--tx);font-size:15px}
+.btn{display:block;width:100%;padding:12px;border-radius:12px;border:1px solid var(--gd2);background:linear-gradient(180deg,#3a2d0a,#241b05);color:var(--gd);font-weight:700;font-size:15px;margin:8px 0}
+.btn.s{background:var(--c1);border-color:var(--ln);color:var(--tx)}
+.lgh{margin:14px 0 6px;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--gd2);text-transform:uppercase}
+.mt{background:var(--c1);border:1px solid var(--ln);border-radius:14px;padding:10px 12px;margin-bottom:8px}
+.mt .l1{display:flex;align-items:center;gap:10px}.mt .tm{color:var(--mu);font-size:12.5px;min-width:42px}
+.mt .nm{flex:1;min-width:0;font-weight:600}.mt .nm span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mt .sc{font-weight:800;color:var(--gd);text-align:right;min-width:34px}.mt .lv{color:var(--gr);font-size:11.5px;font-weight:700}
+.cp{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.cp i{font-style:normal;font-size:11.5px;padding:3px 7px;border-radius:8px;background:var(--c2);color:var(--mu);border:1px solid transparent}
+.cp i b{color:var(--tx)}.cp i.hi{border-color:var(--gd2);color:var(--gd)}.cp i.hi b{color:var(--gd)}
+.pg{height:6px;background:var(--c2);border-radius:4px;overflow:hidden;margin:6px 0 10px}.pg i{display:block;height:100%;background:var(--gd);width:0}
+.bv{margin-top:8px;font-size:12.5px;font-weight:700;color:var(--gr)}.bv.no{color:var(--mu);font-weight:500}.bv.wr{color:#ff9f43;font-weight:600}.mu{color:var(--mu);font-size:13px}.ct{text-align:center;color:var(--mu);padding:28px 8px}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(14,14,17,.94);backdrop-filter:blur(14px);border-top:1px solid var(--ln);z-index:5}
+nav button{flex:1;background:none;border:0;color:var(--mu);font-size:11.5px;font-weight:700;padding:4px 0}nav button span{display:block;font-size:20px}nav button.on{color:var(--gd)}
+.sh{position:fixed;left:0;right:0;top:0;bottom:0;width:100%;background:var(--bg);z-index:10;overflow-y:auto;padding:calc(env(safe-area-inset-top) + 10px) 16px 40px;max-width:720px;margin:0 auto}
+.sh h2{margin:6px 0 2px;font-size:19px}.sh .x{position:sticky;top:0;float:right;background:var(--c1);border:1px solid var(--ln);border-radius:999px;width:36px;height:36px;color:var(--tx);font-size:18px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0}th,td{padding:7px 3px;text-align:right;border-bottom:1px solid var(--ln)}th:first-child,td:first-child{text-align:left}th{color:var(--mu);font-weight:600;font-size:11.5px}
+td.m{color:var(--gd);font-weight:800}.up{color:var(--gr);font-weight:700}.wr{color:#ff9f43;font-weight:700}.dn{color:var(--rd)}.nt{color:var(--mu)}
+.card{background:var(--c1);border:1px solid var(--ln);border-radius:14px;padding:12px;margin:10px 0}.card h3{margin:0 0 6px;font-size:14.5px;color:var(--gd)}
+.cf{display:inline-block;padding:3px 10px;border-radius:999px;font-weight:800;font-size:13px}.cf.a{background:#12351f;color:var(--gr)}.cf.b{background:#3a2d0a;color:var(--gd)}.cf.c{background:#3a1416;color:var(--rd)}
+.fm{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}.fm i{font-style:normal;font-size:11.5px;font-weight:700;padding:3px 6px;border-radius:6px}.fm .W{background:#12351f;color:var(--gr)}.fm .D{background:#3a2d0a;color:var(--gd)}.fm .L{background:#3a1416;color:var(--rd)}
+.bar{height:8px;background:var(--c2);border-radius:4px;position:relative}.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--gd);border-radius:4px}
+.step{display:flex;gap:10px;margin:8px 0}.step b{flex:none;width:26px;height:26px;border-radius:50%;background:#3a2d0a;color:var(--gd);display:grid;place-items:center;font-size:13px}
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#2a2108;color:var(--gd);border:1px solid var(--gd2);padding:9px 16px;border-radius:999px;font-size:13.5px;z-index:20;max-width:90vw}
+</style></head><body>
+<div class="hd"><div class="lg">👑</div><div style="flex:1"><b>CROWN SHARP</b><small>Robot independent + reper sharp</small></div><a href="./" style="color:var(--gd);text-decoration:none;font-weight:700;font-size:13px;border:1px solid var(--gd2);padding:7px 12px;border-radius:999px">← IONUT</a></div>
+<div id="app"></div>
+<nav><button data-t="m" class="on"><span>⚽</span>Meciuri</button><button data-t="e"><span>📊</span>Evidență</button><button data-t="i"><span>ℹ️</span>Info</button></nav>
+<script>
+"use strict";
+const VER="v1:13 (Crown Sharp)";
+const $=s=>document.querySelector(s),esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let SERVER=location.hostname.endsWith("onrender.com")?location.origin:"https://crown-analytics-server.onrender.com";
+try{SERVER=localStorage.getItem("crown_server")||SERVER}catch(e){}
+const wait=ms=>new Promise(r=>setTimeout(r,ms)),p2=n=>String(n).padStart(2,"0");
+const ymd=o=>{const d=new Date(Date.now()+o*864e5);return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())};
+const hhmm=k=>{const d=new Date(k);return isNaN(d)?"--:--":p2(d.getHours())+":"+p2(d.getMinutes())};
+const r1=x=>Math.round(x*10)/10;
+const TOPRX=/premier league|la ?liga|primera divisi|serie a|bundesliga|ligue 1|eredivisie|primeira liga|championship|champions league|europa league|conference league|nations league|world cup|euro|qualif|super lig|süper lig|pro league|superliga|liga 1|scottish premiership|mls|libertadores|sudamericana|brasileir|friendl/i,NOTRX=/women|femin|youth|u ?(17|18|19|20|21|23)\b|reserve|amateur|\bii\b|\bb\b/i;
+const ELX=[["england","^premier league$"],["spain","^(la ?liga|primera divisi.n)$"],["italy","^serie a$"],["germany","^(1\\. )?bundesliga$"],["france","^ligue 1$"],["netherlands","^eredivisie$"],["portugal","^(primeira liga|liga portugal)$"],["belgium","^(jupiler pro league|pro league|first division a)$"],["t[uü]rk","^s[uü]per lig$"],["scotland","^(scottish )?premiership$"],["denmark","^superliga$"],["romania","^(liga (1|i)|superliga)$"],["greece","^super league( 1)?$"],["austria","^bundesliga$"],["switzerland","^super league$"]],
+ELC=/^(uefa )?(champions|europa|conference|europa conference) league$|uefa nations league|^world cup(?!.*qualif)|^euro championship(?!.*qualif)/i,
+T2X=/qualif|nations league|friendl|libertadores|sudamericana|afc champions|afc cup|caf champions|caf confederation|^(mls|major league soccer)$/i,
+T2C=[["england","^(championship|league one|league two)$"],["germany","^dfb.pokal$"],["romania","^cupa rom.niei$"],["england","^(fa cup|efl cup|league cup)$"],["spain","^copa del rey$"],["italy","^coppa italia$"],["france","^coupe de france$"],["portugal","^ta.a de portugal$"],["netherlands","^knvb beker$"],["t[uü]rk","^(t[uü]rkiye kupas.|turkish cup)$"],["scotland","^scottish (league |fa )?cup$"],["france","^ligue 2$"],["germany","^2\\. bundesliga$"],["spain","^(segunda divisi.n|la ?liga ?2|laliga hypermotion)$"],["netherlands","^eerste divisie$"],["portugal","^liga portugal 2$"],["romania","^liga (2|ii)$"],["brazil","^(serie a|brasileir.*)$"],["argentina","^(primera divisi.n|liga profesional.*)$"],["saudi","pro league|professional"],["japan","^j1|j\\. league"],["norway","^eliteserien$"],["sweden","^allsvenskan$"],["poland","^ekstraklasa$"],["belgium","^challenger pro league$"]],
+YTX=/\bU ?(1[5-9]|2[0-3])\b|\bII\b|\bB\b|\bW\b|reserves?|youth|women|\(w\)/i;
+const CTR={spania:"spain",italia:"italy",anglia:"england","marea britanie":"england",germania:"germany",franta:"france",olanda:"netherlands","tarile de jos":"netherlands",portugalia:"portugal",belgia:"belgium",turcia:"turkey",scotia:"scotland",danemarca:"denmark",grecia:"greece",elvetia:"switzerland",brazilia:"brazil",japonia:"japan",norvegia:"norway",suedia:"sweden",polonia:"poland","arabia saudita":"saudi arabia"};
+const T1C=[["ecuador","^liga pro$"],["bolivia","^primera divisi"],["peru","^primera divisi"],["colombia","^primera a$"],["morocco","^botola pro$"],["hungary","^nb i$"],["serbia","^super liga$"],["germany","^3\\. liga$"],["russia","^premier league$"],["chile","^primera divisi"],["belgium","^jupiler pro league$"],["israel","^ligat ha"],["brazil","^serie b$"],["costa.?rica","^primera divisi"],["venezuela","^primera divisi"],["mexico","^liga mx$"],["mexico","^liga de expansi"],["greece","^super league"],["paraguay","^(primera divisi|liga)"],["uruguay","^primera divisi"],["austria","^bundesliga$"],["switzerland","^super league$"],["denmark","^superliga$"],["croatia","^hnl$|^1\\. hnl"],["czech","^(czech )?liga$|^1\\. liga"],["ukraine","^premier league$"],["ukraine","^(persha liga|first league|1st league|1\\. liga)"],["saudi","^(saudi )?(pro league|professional league|first division|division 1|king cup|kings cup)"],["jordan","^(jordan )?(league|pro league|premier)"],["armenia","^(premier|first) league"],["moldova","^(super liga|divizia)"],["albania","^(kategoria|superior|abissnet)"],["macedonia","^(first|1\\.|prva) ?(league|liga)"],["montenegro","^(1\\. ?cfl|prva|first)"],["belarus","^(vysshaya|premier|high)"],["luxembourg","^(national division|bgl|division nationale)"],["faroe","^(meistaradeildin|premier|effo)"],["kenya","^(premier league|fkf)"],["romania","^liga i$"],["portugal","^(segunda liga|liga portugal 2)$"],["england","^national league$"],["scotland","^(premiership|championship)$"],["usa","^usl championship$"],["australia","^a-league"],["australia","^(championship|npl|national premier)"],["south korea","^k league 1$"],["china","^super league$"],["iran","^persian gulf"],["qatar","^stars league"],["uae|united arab","^(uae league|pro league)"],["denmark","^1\\. division$"],["israel","^liga leumit$"],["serbia","^prva liga$"],["slovakia","^2\\. liga$"],["england","^efl trophy$|^papa johns|^national league|^non league|^professional development|^premier league (2|cup|international)"],["italy","^serie c"],["colombia","^primera b$"],["uruguay","^(copa|cup|cupa)"],["czech","^(czech cup|mol cup|cup)$"],["slovakia","cup"],["japan","league cup|^levain|j.?league cup"],["bolivia","^copa"],["cameroon","^elite"],["world","^saff"],["spain","^tercera"],["lithuania","^(ii|2)|^a lyga"],["iraq","^(division|league)? ?(1|2|3)|^iraqi"],["mali","^premi|^ligue 1"],["turkey","^(2|3)\\. lig|^tff"],["italy","^serie b$"],["poland","^(i|1\\.) liga$"],["t[uü]rk","^1\\. lig$"],["greece","^super league 2$"],["switzerland","^challenge league$"],["austria","^2\\. liga$"],["bulgaria","^(first|parva)"],["cyprus","^(first division|1\\. division)"],["ireland","^premier division$"],["finland","^veikkausliiga$"],["sweden","^superettan$"],["norway","^(obos|1\\. division|first division)"],["japan","^j2"],["south korea","^k league 2$"],["argentina","^primera nacional$"],["brazil","^copa do brasil$"],["argentina","^copa argentina$"],["colombia","^copa colombia$"],["egypt","^premier league$"],["south africa","premier|psl"],["usa","^(mls|major league soccer)$"],["scotland","^league one$"],["portugal","^ta.a da liga$"],["france","^coupe de la ligue$"],["wales","^cymru premier"],["slovakia","^(super liga|fortuna liga)$"],["czech","^(first league|czech liga|fortuna liga)$"],["slovenia","^(prva liga|1\\. snl)"],["bosnia","^(premier|premijer)"],["iceland","^(urvalsdeild|besta deild|premier)"],["northern.?ireland","^(nifl )?premiership"],["kazakhstan","^premier"],["thailand","^thai league 1$"],["india","^(indian super league|isl)$"],["malta","^premier"],["georgia","^erovnuli"],["azerbaijan","^premier"],["lithuania|latvia|estonia","^(a lyga|virsliga|meistriliiga)$"],["algeria|tunisia","^(ligue professionnelle 1|ligue 1)$"],["nigeria","^npfl|premier"],["canada","^canadian premier"],["honduras|guatemala|el.?salvador|panama","^(liga nacional|liga panameña|primera)"]];
+const YBY=/u[ -]?(1[5-9]|2[0-3])\b|under[ -]?(1[5-9]|2[0-3])|youth/,WMN=/women|femin|\(w\)|frauen|f[eé]minine|\bliga f\b|\bnwsl\b|\(f\)/,WTM=/ w$| w \||\(w\)/i,RSV=/reserve/;
+const tier=m=>{const n=(m.league.name||"").toLowerCase(),c0=(m.league.country||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""),c=CTR[c0]||c0,a=n+" "+c,tn=(m.teams.home.name||"")+" | "+(m.teams.away.name||"");if(WMN.test(n)||RSV.test(n)||WTM.test(tn)||(YBY.test(n+" "+tn.toLowerCase())&&/^(world|europe|asia|africa|south america|north america|oceania|concacaf)$/.test(c0)))return(ELC.test(n)?3:1);if((NOTRX.test(a)&&!/^(serie b (brazil|italy)|liga (ii|2) romania|primera b colombia)$/.test(a)&&!/^(premier league (2|cup|international)|serie c)/.test(n))||(YTX.test(tn)&&!/professional development|^premier league (2|cup|international)/.test(n)&&!(/^(segunda divisi|la ?liga ?2|laliga hypermotion|3\. liga|liga (ii|2)$)/.test(n)&&!/\bU ?(1[5-9]|2[0-3])\b|youth|women|\(w\)|\bW\b/i.test(tn))))return 0;
+ if(ELC.test(n))return 3;for(const[co,rx]of ELX)if(new RegExp(co).test(c)&&new RegExp(rx,"i").test(n))return 3;
+ if(T2X.test(n))return 2;for(const[co,rx]of T2C)if(new RegExp(co).test(c)&&new RegExp(rx,"i").test(n))return 2;for(const[co,rx]of T1C)if(new RegExp(co).test(c)&&new RegExp(rx,"i").test(n))return 1;return 0};
+async function api(p,ms){const c=new AbortController(),t=setTimeout(()=>c.abort(),ms||60000);try{const r=await fetch(SERVER+p,{signal:c.signal});const j=await r.json().catch(()=>({}));if(!r.ok||j.success===false)throw new Error(j.error||("Eroare "+r.status));return j}finally{clearTimeout(t)}}
+function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2200)}
+
+/* ---------- date meciuri ---------- */
+const FX={};
+async function loadDay(d,force){const c=FX[d];if(c&&!force&&Date.now()-c.t<12e4)return c.list;
+ const j=await api("/af-fixtures?date="+d+"&timezone=Europe/London");
+ const L=((j.data&&j.data.matches)||[]).filter(x=>x&&x.id!=null&&x.home&&x.away).map(x=>({id:x.id,d,k:x.kickoff,st:x.status,sh:x.short,min:x.minute,gh:x.goals?x.goals.home:null,ga:x.goals?x.goals.away:null,league:{name:x.league.name||"",country:x.league.country||""},teams:{home:{name:x.home.name},away:{name:x.away.name}}}));
+ FX[d]={t:Date.now(),list:L};return L}
+
+/* ---------- istoric echipe ---------- */
+const TH={},WHY={},RAW={};
+const natLg=m=>/world|europe|international|nations|friendl|qualif|euro\b|cup/i.test((m.league.name||"")+" "+(m.league.country||""))&&!/club|cup of|fa cup|league cup|copa|taça|coupe|champions league|europa|conference|libertadores|sudamericana/i.test(m.league.name||"");
+async function team(name,nat){const k=name.toLowerCase()+(nat?"|n":"");if(TH[k]!==undefined)return TH[k];
+ const c=LS.get("c2_t_"+k,null);if(c&&c.v&&Date.now()-c.t<12*36e5){TH[k]=c.v;return c.v}
+ WHY[k]="";const sq=name.normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9 ]+/g," ").replace(/\s+/g," ").trim();if(sq.length<3){TH[k]=null;return null}
+ try{const j=await api("/af-team?name="+encodeURIComponent(sq)+"&stats=0&nat="+(nat?1:0));let v=null;
+  if(j.found){v=(j.matches||[]).filter(x=>x.ft&&x.ft.home!=null&&x.ft.away!=null).map(x=>{const hm=x.home!==false,ft=x.ft,ht=x.ht,gf=hm?ft.home:ft.away,ga=hm?ft.away:ft.home,hk=ht&&ht.home!=null&&ht.away!=null;
+   return{gf,ga,hm,hd:hk?(ht.home==ht.away?1:0):null,h1:hk?(ht.home+ht.away>0?1:0):null,h2:hk?((ft.home+ft.away)-(ht.home+ht.away)>0?1:0):null}}).slice(-7);RAW[k]=v;const ok=v.filter(z=>z.gf+z.ga<10);if(v.length-ok.length>=2){v=null;WHY[k]="bad"}else{v=ok;if(v.length<3){WHY[k]="short";v=null}}}else WHY[k]="nf"
+  TH[k]=v;if(v)LS.set("c2_t_"+k,{t:Date.now(),v});return v}catch(e){WHY[k]="err";return null}}
+const whyT=(n,nat)=>{const w=WHY[n.toLowerCase()+(nat?"|n":"")];return w=="nf"?"echipa nu a fost găsită":w=="bad"?"istoric cu scoruri suspecte (două sau mai multe meciuri cu 10+ goluri); scorurile primite sunt afișate mai jos":w=="err"?"eroare la încărcare, închide și deschide din nou meciul":w=="short"?"mai puțin de 3 meciuri":"fără istoric"};
+
+/* ---------- modelul Crown (fără cote) ---------- */
+const G=1.35,shr=(v,n)=>(v*n+G*2)/(n+2);
+const pois=(l,k)=>{let r=Math.exp(-l);for(let i=1;i<=k;i++)r*=l/i;return r};
+function side(L,home){const s=L.filter(x=>x.hm===home),u=s.length>=3?s:L,w=u===L?1:.6,f=(a,k)=>a.reduce((t,x)=>t+x[k],0)/a.length;return{gf:w*f(u,"gf")+(1-w)*f(L,"gf"),ga:w*f(u,"ga")+(1-w)*f(L,"ga")}}
+function half(A,B,k,pr){const f=L=>{const x=L.map(y=>y[k]).filter(y=>y!=null);return x.length>=3?(x.reduce((s,y)=>s+y,0)+pr*2)/(x.length+2):null};const p=f(A),q=f(B);return p==null||q==null?null:r1((p+q)/2*100)}
+function model(A,B){if(!A||!B||A.length<3||B.length<3)return null;
+ const a=side(A,true),b=side(B,false);
+ const lh=Math.max(.2,(shr(a.gf,A.length)+shr(b.ga,B.length))/2*1.08),la=Math.max(.2,(shr(b.gf,B.length)+shr(a.ga,A.length))/2*.93);
+ let h=0,d=0,v=0,o15=0,o25=0,bt=0,t=0;
+ for(let i=0;i<=10;i++)for(let j=0;j<=10;j++){const q=pois(lh,i)*pois(la,j);t+=q;if(i>j)h+=q;else if(i==j)d+=q;else v+=q;if(i+j>1)o15+=q;if(i+j>2)o25+=q;if(i>0&&j>0)bt+=q}
+ const P=x=>r1(x/t*100);let hp=0,t1=0;for(let k=0;k<=9;k++)hp+=pois(lh*.45,k)*pois(la*.45,k);for(let i=0;i<=9;i++)t1+=pois(lh*.45,i);const hf=half(A,B,"hd",.42);const hdv=r1(hf==null?hp*100:(hp*100+hf)/2);
+ return{lh:r1(lh),la:r1(la),p:{h:P(h),d:P(d),a:P(v),o15:P(o15),o25:P(o25),btts:P(bt),h1:half(A,B,"h1",.72),h2:half(A,B,"h2",.82),hd:hdv}}}
+
+/* ---------- reper sharp ---------- */
+const BOOKS=["Pinnacle","Betfair","Bet365","SBOBET"];
+const SH={};
+async function sharp(id){if(SH[id]!==undefined)return SH[id];try{const j=await api("/af-sharp?id="+id,40000);SH[id]=j.found?j.books:null;return SH[id]}catch(e){return null}}
+function shp(sh,k){if(!sh)return null;for(const b of BOOKS){const x=sh[b];if(x&&x.p&&x.p[k]!=null)return{name:b,p:x.p[k],odds:x.odds?x.odds[k]:null,all:x}}return null}
+function confidence(m,sh,nA,nB){if(!m)return 0;let c=Math.min(nA,nB)/7*70;if(m.p.h1!=null&&m.p.h2!=null)c+=15;
+ const s=sh&&BOOKS.map(b=>sh[b]).find(x=>x&&x.p&&x.p.h!=null);
+ if(s){const df=(Math.abs(m.p.h-s.p.h)+Math.abs(m.p.d-s.p.d)+Math.abs(m.p.a-s.p.a))/3;c+=df<=6?15:df>=14?-10:5}
+ return Math.max(0,Math.min(100,Math.round(c)))}
+const cfl=c=>c>=75?["a","Mare"]:c>=50?["b","Medie"]:["c","Mică"];
+
+/* ---------- calcul + evidență ---------- */
+let LOG=LS.get("c2_log",{});const PR={};
+(()=>{let ch=0;Object.keys(LOG).forEach(id=>{const e=LOG[id];if(!e.v&&natLg({league:{name:e.lg||"",country:""}})){delete LOG[id];ch=1}});if(ch)LS.set("c2_log",LOG)})();
+function slim(sh){if(!sh)return null;const o={};BOOKS.forEach(b=>{if(sh[b])o[b]={p:sh[b].p,odds:sh[b].odds}});return o}
+function fromLog(id){const e=LOG[id];return e?{m:{p:e.p},sh:e.sh,conf:e.conf,nA:e.n,nB:e.n,log:1}:null}
+const getPR=id=>PR[id]||fromLog(id);
+function saveLog(x){const r=PR[x.id];if(!r||!r.m)return;const ko=new Date(x.k).getTime(),e=LOG[x.id];
+ if(!(x.st=="scheduled"&&ko>Date.now()))return;if(e&&(e.res||ko<Date.now()+5*6e4))return;
+ LOG[x.id]={id:x.id,d:x.d,k:x.k,h:x.teams.home.name,a:x.teams.away.name,lg:x.league.name,v:2,ts:Date.now(),p:r.m.p,sh:slim(r.sh),conf:r.conf,n:Math.min(r.nA,r.nB),res:null};
+ const ks=Object.keys(LOG);if(ks.length>3000){ks.sort((a,b)=>LOG[a].ts-LOG[b].ts).slice(0,ks.length-3000).forEach(k=>delete LOG[k])}
+ LS.set("c2_log",LOG)}
+async function calc(x){const nt=natLg(x),[A,B]=await Promise.all([team(x.teams.home.name,nt),team(x.teams.away.name,nt)]);
+ const m=model(A,B);let sh=null;if(m&&(x.st=="scheduled"||x.st=="tbd"))sh=await sharp(x.id);
+ const nA=A?A.length:0,nB=B?B.length:0;PR[x.id]={m,sh,A,B,nA,nB,conf:confidence(m,sh,nA,nB)};saveLog(x);return PR[x.id]}
+async function pool(items,fn,n,cb){let i=0,done=0;const w=async()=>{while(i<items.length){const x=items[i++];try{await fn(x)}catch(e){}done++;if(cb)cb(done,items.length);await wait(60)}};await Promise.all(Array.from({length:n},w))}
+async function grade(){const now=Date.now(),pend=Object.values(LOG).filter(e=>!e.res&&new Date(e.k).getTime()+3*36e5<now);if(!pend.length)return 0;
+ let n=0;for(const d of[...new Set(pend.map(e=>e.d))]){let j;try{j=await api("/af-fixtures?date="+d+"&timezone=Europe/London&fresh=1")}catch(e){continue}
+  const M=new Map(((j.data&&j.data.matches)||[]).map(x=>[x.id,x]));
+  for(const e of pend.filter(e=>e.d==d)){const x=M.get(e.id);if(!x)continue;
+   if(x.short=="FT"&&x.goals&&x.goals.home!=null&&x.goals.away!=null){const ht=x.ht||{},hk=ht.home!=null&&ht.away!=null;
+    e.res={gh:x.goals.home,ga:x.goals.away,hh:hk?ht.home:null,ha:hk?ht.away:null,h1:hk?(ht.home+ht.away>0?1:0):null,h2:hk?((x.goals.home+x.goals.away)-(ht.home+ht.away)>0?1:0):null};n++}
+   else if(["AET","PEN","CANC","ABD","AWD","WO"].includes(x.short)){e.res={void:1}}}}
+ LS.set("c2_log",LOG);return n}
+const MK=[["h","1X2"],["o15","Peste 1.5"],["o25","Peste 2.5"],["btts","Ambele marchează"],["h1","Gol repriza 1"],["h2","Gol repriza 2"],["hd","Egal la pauză"]];
+function outc(e,k){const r=e.res;if(!r||r.void)return null;if(k=="o15")return r.gh+r.ga>1?1:0;if(k=="o25")return r.gh+r.ga>2?1:0;if(k=="btts")return r.gh>0&&r.ga>0?1:0;if(k=="hd")return r.hh==null?null:(r.hh==r.ha?1:0);return r[k]}
+function metrics(){const out={},cal=[];for(const[k]of MK)out[k]={n:0,hit:0,br:0,ll:0,sn:0,sbr:0,sll:0,bets:0,pl:0};
+ for(const e of Object.values(LOG)){if(!e.res||e.res.void)continue;
+  for(const[k]of MK){const o=out[k];
+   if(k=="h"){if(e.p.h==null)continue;const act=e.res.gh>e.res.ga?0:e.res.gh==e.res.ga?1:2,pr=[e.p.h,e.p.d,e.p.a].map(v=>v/100);
+    o.n++;o.br+=pr.reduce((s,v,i)=>s+(v-(i==act?1:0))**2,0);o.ll+=-Math.log(Math.max(.01,pr[act]));o.hit+=pr.indexOf(Math.max(...pr))==act?1:0;pr.forEach((v,i)=>cal.push([v,i==act?1:0]));
+    const s=shp(e.sh,"h");if(s){const sp=[s.all.p.h,s.all.p.d,s.all.p.a].map(v=>v/100);o.sn++;o.sbr+=sp.reduce((t,v,i)=>t+(v-(i==act?1:0))**2,0);o.sll+=-Math.log(Math.max(.01,sp[act]));
+     const od=[s.all.odds.h,s.all.odds.d,s.all.odds.a];if(od.every(z=>z>1))for(let i=0;i<3;i++)if(pr[i]*od[i]-1>=.05){o.bets++;o.pl+=i==act?od[i]-1:-1}}}
+   else{const pv=e.p[k],y=outc(e,k);if(pv==null||y==null)continue;const p=pv/100;o.n++;o.br+=(p-y)**2;o.ll+=-(y?Math.log(Math.max(.01,p)):Math.log(Math.max(.01,1-p)));o.hit+=(p>=.5)==!!y?1:0;cal.push([p,y]);
+    const s=shp(e.sh,k);if(s){const sp=s.p/100;o.sn++;o.sbr+=(sp-y)**2;o.sll+=-(y?Math.log(Math.max(.01,sp)):Math.log(Math.max(.01,1-sp)));if(s.odds>1&&p*s.odds-1>=.05){o.bets++;o.pl+=y?s.odds-1:-1}}}}}
+ return{out,cal}}
+
+/* ---------- interfață ---------- */
+const S={tab:"m",day:0,all:false,q:"",busy:null};
+const DAYS=[[-1,"Ieri"],[0,"Azi"],[1,"Mâine"],[2,"Poimâine"]];
+let LIST=[];
+const MKN={h:"1 (gazde)",d:"X (egal)",a:"2 (oaspeți)",o15:"Peste 1.5",o25:"Peste 2.5",btts:"Ambele marchează",h1:"Gol repriza 1",h2:"Gol repriza 2",hd:"Egal la pauză"},AB2={Pinnacle:"P",Betfair:"B",Bet365:"365",SBOBET:"S"};
+function bestVal(r){if(!r||!r.m)return"";if(!r.sh)return`<div class="bv no">Fără cote sharp pentru acest meci</div>`;let b=null,w=null;for(const k of Object.keys(MKN)){const mv=r.m.p[k],q=shp(r.sh,k);if(mv==null||!q)continue;const dv=mv-q.p;if(dv>=7){if(!w||dv>w.dv)w={k,dv,mv,q}}else if(dv>=5&&(!b||dv>b.dv))b={k,dv,mv,q}}
+ return b?`<div class="bv">💎 Valoare: ${MKN[b.k]} · model ${Math.round(b.mv)}% vs ${AB2[b.q.name]} ${Math.round(b.q.p)}% (+${r1(b.dv)})</div>`:w?`<div class="bv wr">⚠ Diferență mare la ${MKN[w.k]}: model ${Math.round(w.mv)}% vs ${AB2[w.q.name]} ${Math.round(w.q.p)}% (+${r1(w.dv)}). Probabil eroare de model, nu valoare.</div>`:`<div class="bv no">Fără valoare față de sharp</div>`}
+function chips(r){if(!r||!r.m)return"";const p=r.m.p,c=(l,v,hi)=>v==null?"":`<i class="${hi?"hi":""}">${l} <b>${Math.round(v)}</b></i>`;
+ const mx=Math.max(p.h,p.d,p.a);
+ return`<div class="cp">${c("1",p.h,p.h==mx)}${c("X",p.d,p.d==mx)}${c("2",p.a,p.a==mx)}${c("O1.5",p.o15,p.o15>=80)}${c("O2.5",p.o25,p.o25>=65)}${c("GG",p.btts,p.btts>=65)}${c("R1",p.h1,p.h1>=75)}${c("R2",p.h2,p.h2>=85)}${c("HT X",p.hd,p.hd>=50)}</div>`}
+function rowHtml(x){const r=getPR(x.id),live=x.st=="live",fin=x.st=="finished",sc=(live||fin)&&x.gh!=null?x.gh+"–"+x.ga:"";
+ return`<div class="mt" data-id="${x.id}" data-d="${x.d}"><div class="l1"><div class="tm">${live?`<span class="lv">${x.min||""}'</span>`:fin?"FT":hhmm(x.k)}</div><div class="nm"><span>${esc(x.teams.home.name)}</span><span>${esc(x.teams.away.name)}</span></div><div class="sc">${sc}</div></div>${r&&r.m?chips(r)+bestVal(r):""}</div>`}
+async function viewM(){
+ const app=$("#app");
+ app.innerHTML=`<div class="row">${DAYS.map(d=>`<button class="ch ${S.day==d[0]?"on":""}" data-day="${d[0]}">${d[1]}</button>`).join("")}<button class="ch ${S.all?"on":""}" data-all="1">${S.all?"Toate ligile":"Ligi principale"}</button></div>
+ <input class="in" id="q" placeholder="Caută echipă sau ligă…" value="${esc(S.q)}"><button class="btn" id="calc">Calculează toate meciurile</button><div id="pg"></div><div id="lst"><div class="ct">Se încarcă…</div></div>`;
+ $("#q").oninput=e=>{S.q=e.target.value;paintList()};
+ $("#calc").onclick=calcAll;
+ const d=ymd(S.day);try{LIST=await loadDay(d)}catch(e){if(S.tab=="m"&&ymd(S.day)==d)$("#lst").innerHTML=`<div class="ct">Nu pot lua meciurile (${esc(e.message)}).<br><small>Serverul poate fi adormit, mai încearcă peste un minut.</small></div>`;return}
+ if(S.tab=="m"&&ymd(S.day)==d)paintList()}
+function visible(){const q=S.q.trim().toLowerCase();return LIST.filter(x=>(S.all||tier(x)>=1)&&(!q||(x.teams.home.name+x.teams.away.name+x.league.name).toLowerCase().includes(q)))}
+function paintList(){const el=$("#lst");if(!el)return;const V=visible();
+ if(!V.length){el.innerHTML=`<div class="ct">Niciun meci pentru filtrele alese.</div>`;return}
+ const G2={};V.forEach(x=>{const k=x.league.country+"|"+x.league.name;(G2[k]=G2[k]||{c:x.league.country,n:x.league.name,t:tier(x),a:[]}).a.push(x)});
+ el.innerHTML=Object.values(G2).sort((a,b)=>b.t-a.t||(a.c+a.n).localeCompare(b.c+b.n)).map(g=>`<div class="lgh">${esc(g.c)} · ${esc(g.n)}</div>`+g.a.sort((x,y)=>new Date(x.k)-new Date(y.k)).map(rowHtml).join("")).join("");
+ el.querySelectorAll(".mt").forEach(e=>e.onclick=()=>openD(+e.dataset.id))}
+async function calcAll(){if(S.busy)return;const V=visible().filter(x=>(x.st=="scheduled"||x.st=="tbd")&&!(PR[x.id]&&PR[x.id].m)).slice(0,70);
+ if(!V.length){toast("Nimic de calculat");return}S.busy=1;const pg=$("#pg");if(pg)pg.innerHTML=`<div class="mu" id="pgt">Calculez 0/${V.length}…</div><div class="pg"><i id="pgb"></i></div>`;
+ let last=0;await pool(V,calc,4,(d,n)=>{const t=$("#pgt"),b=$("#pgb");if(t)t.textContent="Calculez "+d+"/"+n+"…";if(b)b.style.width=d/n*100+"%";if(d-last>=6||d==n){last=d;if(S.tab=="m")paintList()}});
+ S.busy=null;if(S.tab=="m"){paintList();const g=$("#pg");if(g)g.innerHTML=""}toast("Gata, salvat în evidență")}
+const dl=(m,s)=>s==null?`<td class="nt">–</td>`:`<td>${r1(s)}</td>`;
+function fm(L){return L?`<div class="fm">${L.map(x=>`<i class="${x.gf>x.ga?"W":x.gf==x.ga?"D":"L"}">${x.gf}-${x.ga}</i>`).join("")}</div>`:`<span class="mu">fără istoric</span>`}
+async function openD(id){const x=LIST.find(y=>y.id==id);if(!x)return;const o=document.createElement("div");o.className="sh";o.innerHTML=`<button class="x">✕</button><h2>${esc(x.teams.home.name)} – ${esc(x.teams.away.name)}</h2><div class="mu">${esc(x.league.country)} · ${esc(x.league.name)} · ${hhmm(x.k)}</div><div id="dd" class="ct">Calculez…</div>`;
+ document.body.appendChild(o);o.querySelector(".x").onclick=()=>{o.remove();if(S.tab=="m")paintList()};
+ let r=PR[id];if(!r||!r.m){try{r=await calc(x)}catch(e){r=null}}if(!r||!r.m){const dd=o.querySelector("#dd");dd.className="card";dd.innerHTML=`<h3>Istoric insuficient</h3><div class="mu">Nu afișez o estimare nesigură când una dintre echipe nu are cel puțin 3 meciuri de încredere în istoric.</div><div class="mu" style="margin-top:8px">${esc(x.teams.home.name)}</div>${r&&r.A&&r.A.length>=3?fm(r.A):`<span class="mu">${whyT(x.teams.home.name,natLg(x))}</span>${RAW[x.teams.home.name.toLowerCase()+(natLg(x)?"|n":"")]?fm(RAW[x.teams.home.name.toLowerCase()+(natLg(x)?"|n":"")]):""}`}<div class="mu" style="margin-top:8px">${esc(x.teams.away.name)}</div>${r&&r.B&&r.B.length>=3?fm(r.B):`<span class="mu">${whyT(x.teams.away.name,natLg(x))}</span>${RAW[x.teams.away.name.toLowerCase()+(natLg(x)?"|n":"")]?fm(RAW[x.teams.away.name.toLowerCase()+(natLg(x)?"|n":"")]):""}`}`;return}
+ const p=r.m.p,sh=r.sh,AB={Pinnacle:"P",Betfair:"B",Bet365:"365",SBOBET:"S"},bk=BOOKS.filter(b=>sh&&sh[b]),cl=cfl(r.conf);
+ const rows=[["1 (gazde)","h"],["X (egal)","d"],["2 (oaspeți)","a"],["Peste 1.5","o15"],["Peste 2.5","o25"],["Ambele marchează","btts"],["Gol repriza 1","h1"],["Gol repriza 2","h2"],["Egal la pauză","hd"]];
+ const body=rows.map(([l,k])=>{const mv=p[k],s=shp(sh,k),dv=s&&mv!=null?r1(mv-s.p):null;
+  return`<tr><td>${l}</td><td class="m">${mv==null?"–":Math.round(mv)+"%"}</td>${bk.map(b=>sh[b].p[k]==null?`<td class="nt">–</td>`:`<td>${Math.round(sh[b].p[k])}%</td>`).join("")}<td class="${dv==null?"nt":dv>=7?"wr":dv>=5?"up":dv<=-5?"dn":""}">${dv==null?"–":(dv>0?"+":"")+dv+" <small class='nt'>"+AB[s.name]+"</small>"}</td></tr>`}).join("");
+ o.querySelector("#dd").outerHTML=`<div class="card"><h3>Încredere</h3><span class="cf ${cl[0]}">${r.conf}/100 · ${cl[1]}</span><div class="mu" style="margin-top:6px">Bazat pe ${Math.min(r.nA,r.nB)} meciuri în istoric${sh?" și pe comparația cu piața sharp":", fără cote sharp disponibile"}.</div></div>
+ <div class="card"><h3>Model Crown vs. piața sharp</h3><div style="overflow-x:auto"><table><tr><th>Piață</th><th>Model</th>${bk.map(b=>`<th>${b}</th>`).join("")}<th>Δ</th></tr>${body}</table></div>
+ <div class="mu">Procentele caselor sunt fără marjă. Δ = model minus prima casă disponibilă din rând, în puncte procentuale (P = Pinnacle, B = Betfair, 365 = Bet365, S = SBOBET). Verde = modelul vede mai multe șanse decât piața (5–7 puncte). Portocaliu = diferență de peste 7 puncte: probabil o eroare a modelului, nu valoare. Roșu = modelul vede mai puține șanse.</div></div>
+ <div class="card"><h3>Formă (ultimele ${r.nA}/${r.nB} meciuri)</h3><div>${esc(x.teams.home.name)}</div>${fm(r.A)}<div style="margin-top:8px">${esc(x.teams.away.name)}</div>${fm(r.B)}<div class="mu" style="margin-top:8px">Goluri așteptate: ${r.m.lh} – ${r.m.la}</div></div>
+ <div class="mu">${r.log||LOG[id]?"Estimarea e salvată în Evidență și se verifică automat după meci.":"Meciul a început, nu salvez estimarea (ar fi cu rezultatul la vedere)."}</div>`}
+async function viewE(){const app=$("#app");app.innerHTML=`<div class="ct">Verific rezultatele…</div>`;let g=0;try{g=await grade()}catch(e){}if(S.tab!="e")return;
+ const all=Object.values(LOG),done=all.filter(e=>e.res&&!e.res.void),pend=all.filter(e=>!e.res),vd=all.filter(e=>e.res&&e.res.void);
+ const{out,cal}=metrics(),f=(v,d)=>v==null||isNaN(v)?"–":v.toFixed(d==null?3:d);
+ const rows=MK.map(([k,l])=>{const o=out[k];if(!o.n)return`<tr><td>${l}</td><td colspan="6" class="nt" style="text-align:right">fără date</td></tr>`;
+  const sb=o.sn?o.sbr/o.sn:null;return`<tr><td>${l}</td><td>${o.n}</td><td>${Math.round(o.hit/o.n*100)}%</td><td class="m">${f(o.br/o.n)}</td><td>${o.sn?f(sb)+" <small class='nt'>("+o.sn+")</small>":"–"}</td><td>${f(o.ll/o.n)}</td><td class="${o.bets?(o.pl>=0?"up":"dn"):"nt"}">${o.bets?(o.pl/o.bets*100).toFixed(0)+"% <small>("+o.bets+")</small>":"–"}</td></tr>`}).join("");
+ const B=Array.from({length:10},()=>({n:0,p:0,y:0}));cal.forEach(([p,y])=>{const i=Math.min(9,Math.floor(p*10));B[i].n++;B[i].p+=p;B[i].y+=y});
+ const cr=B.map((b,i)=>b.n?`<tr><td>${i*10}–${i*10+10}%</td><td>${b.n}</td><td>${Math.round(b.p/b.n*100)}%</td><td><div class="bar"><i style="width:${Math.round(b.y/b.n*100)}%"></i></div></td><td>${Math.round(b.y/b.n*100)}%</td></tr>`:"").join("");
+ app.innerHTML=`<div class="card"><h3>Evidența estimărilor</h3><div>${all.length} salvate · ${done.length} verificate · ${pend.length} în așteptare${vd.length?" · "+vd.length+" anulate/prelungiri":""}</div><div class="mu" style="margin-top:6px">Estimarea se salvează înainte de meci, apoi se compară cu rezultatul. Cu sub 100 de meciuri verificate cifrele nu spun nimic sigur.</div></div>
+ <button class="btn s" id="rf">Actualizează rezultatele</button>
+ <div class="card"><h3>Performanță pe piețe</h3><table><tr><th>Piață</th><th>Meciuri</th><th>Nimerit</th><th>Brier</th><th>Brier sharp</th><th>LogLoss</th><th>ROI</th></tr>${rows}</table>
+ <div class="mu">Brier și LogLoss: mai mic = mai bine. „Brier sharp” e același calcul pe cotele Pinnacle, pe aceleași meciuri (în paranteză). Dacă Brier-ul modelului e mai mic decât al sharp-ului, modelul bate piața. ROI: pariuri de 1 unitate doar când modelul vede cel puțin 5% valoare față de cotele sharp, pe 1X2 și pe Peste/Da.</div></div>
+ <div class="card"><h3>Calibrare</h3>${cr?`<table><tr><th>Estimat</th><th>n</th><th>Medie</th><th></th><th>Real</th></tr>${cr}</table><div class="mu">Dacă „Medie” și „Real” sunt apropiate, procentele sunt corecte.</div>`:`<div class="mu">Apare după primele meciuri verificate.</div>`}</div>
+ <button class="btn s" id="cl">Șterge evidența</button>`;
+ $("#rf").onclick=()=>viewE();let ar=0;$("#cl").onclick=e=>{if(!ar){ar=1;e.target.textContent="Apasă încă o dată pentru ștergere definitivă";return}LOG={};LS.set("c2_log",{});viewE()}}
+function viewI(){$("#app").innerHTML=`<div class="card"><h3>Cum funcționează</h3>
+ <div class="step"><b>1</b><div><b style="all:unset;font-weight:700">Date statistice.</b> Goluri, formă, acasă/deplasare și goluri pe reprize din ultimele 7 meciuri ale fiecărei echipe (API-Football). Nu folosim xG.</div></div>
+ <div class="step"><b>2</b><div><b style="all:unset;font-weight:700">Robotul Crown.</b> Calculează independent, fără cote, 1X2, Peste 1.5, Peste 2.5, Ambele marchează, Gol repriza 1, Gol repriza 2 și Egal la pauză.</div></div>
+ <div class="step"><b>3</b><div><b style="all:unset;font-weight:700">Reper sharp.</b> Cotele Pinnacle, Betfair, Bet365 și SBOBET, fără marjă, afișate separat de model. Dacă o casă nu are cote pentru meci, nu apare.</div></div>
+ <div class="step"><b>4</b><div><b style="all:unset;font-weight:700">Comparare și evaluare.</b> Estimările se salvează înainte de meci, apoi se măsoară: Brier Score, Log Loss, calibrare și ROI.</div></div>
+ <div class="step"><b>5</b><div><b style="all:unset;font-weight:700">Încredere.</b> Scor de la 0 la 100, din numărul de meciuri din istoric și din cât de aproape e modelul de piață.</div></div></div>
+ <div class="card"><h3>Ce nu face încă</h3><div class="mu">Closing Line Value (cotele din ultimul moment), accidentări și nivelul adversarilor. Aplicația nu garantează câștig: spune doar dacă modelul e mai bun decât piața, după suficiente meciuri.</div></div>
+ <div class="card"><h3>Server</h3><input class="in" id="sv" value="${esc(SERVER)}"><button class="btn s" id="sv2">Salvează</button></div>
+ <div class="mu" style="text-align:center">Versiune ${VER}</div>`;
+ $("#sv2").onclick=()=>{SERVER=$("#sv").value.trim().replace(/\/+$/,"");try{localStorage.setItem("crown_server",SERVER)}catch(e){}toast("Salvat")}}
+function go(t){S.tab=t;document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t==t));({m:viewM,e:viewE,i:viewI})[t]()}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>go(b.dataset.t));
+document.addEventListener("click",e=>{const d=e.target.closest("[data-day]"),a=e.target.closest("[data-all]");if(d){S.day=+d.dataset.day;viewM()}else if(a){S.all=!S.all;viewM()}});
+go("m");
+
+</script></body></html>
